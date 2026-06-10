@@ -1,0 +1,21 @@
+{
+  "name": "rl-showdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLGR-Saumoine/RL-Showdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BLGR-Saumoine/RL-Showdown/issues"
+  },
+  "homepage": "https://github.com/BLGR-Saumoine/RL-Showdown#readme"
+}
