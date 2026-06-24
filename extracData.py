@@ -32,11 +32,11 @@ STATUS_TO_ID  = {
 }
 
 TYPE_TO_ID: Dict[str, int] = {
-    "Normal": 1,   "Fire": 2,     "Water": 3,  "Electric": 4,
-    "Grass": 5,    "Ice": 6,      "Fighting": 7, "Poison": 8,
-    "Ground": 9,   "Flying": 10,  "Psychic": 11, "Bug": 12,
-    "Rock": 13,    "Ghost": 14,   "Dragon": 15,  "Dark": 16,
-    "Steel": 17,   "Fairy": 18,
+    "normal": 0,   "fire": 1,     "water": 2,  "electric": 3,
+    "grass": 4,    "ice": 5,      "fighting": 6, "poison": 7,
+    "ground": 8,   "flying": 9,   "psychic": 10, "bug": 11,
+    "rock": 12,    "ghost": 13,   "dragon": 14,  "dark": 15,
+    "steel": 16,   "fairy": 17,   "stellar": 18
 }
 
 def getPoolOfInfos(dico) :
@@ -85,6 +85,8 @@ with open('gen9randombattle.json') as f:
     dico = json.load(f)
 
 pokemons, moves, items, abilities = getPoolOfInfos(dico)
+
+items.append("No-item")
 
 POKE_ID  = list_to_dict_ID(pokemons)
 MOVES_ID  = list_to_dict_ID(moves)
