@@ -1,5 +1,6 @@
 import json
 from typing import Dict
+import requests
 
 global WEATHER_TO_ID, TERRAIN_TO_ID, STATUS_TO_ID, POKE_ID, MOVES_ID, ABILITIES_ID, ITEMS_ID
 
@@ -36,7 +37,7 @@ TYPE_TO_ID: Dict[str, int] = {
     "grass": 4,    "ice": 5,      "fighting": 6, "poison": 7,
     "ground": 8,   "flying": 9,   "psychic": 10, "bug": 11,
     "rock": 12,    "ghost": 13,   "dragon": 14,  "dark": 15,
-    "steel": 16,   "fairy": 17,   "stellar": 18
+    "steel": 16,   "fairy": 17,   "stellar": 18, "unknown" : 19
 }
 
 def getPoolOfInfos(dico) :
@@ -81,7 +82,19 @@ def list_to_dict_ID(listofItem) :
         it += 1
     return dico
 
-with open('gen9randombattle.json') as f:
+
+url = "https://pkmn.github.io/randbats/data/gen9randombattle.json"
+
+response = requests.get(url)
+
+data = response.json()
+
+with open("current_sets.json", 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=4, ensure_ascii=False)
+
+print("Pokemon's set is up to date !")
+
+with open('current_sets.json') as f:
     dico = json.load(f)
 
 pokemons, moves, items, abilities = getPoolOfInfos(dico)

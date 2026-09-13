@@ -1,8 +1,9 @@
-from extracData import getPoolOfInfos, list_to_dict_ID, WEATHER_TO_ID, TERRAIN_TO_ID, STATUS_TO_ID, POKE_ID, MOVES_ID, ABILITIES_ID, ITEMS_ID, TYPE_TO_ID
+from extracData import POKE_ID, MOVES_ID, ABILITIES_ID, ITEMS_ID, TYPE_TO_ID, WEATHER_TO_ID, TERRAIN_TO_ID, STATUS_TO_ID
 import json
 import requests
 import pickle
 import numpy as np
+import math
 from sentence_transformers import SentenceTransformer
 
 MOVE_CATEGORY = {
@@ -111,7 +112,6 @@ CUSTOM_ITEM_DESCRIPTIONS = {
     "Griseous Core": "Held by Giratina. Changes form to Origin Form. Boosts Ghost-type and Dragon-type moves by 20%."
 }
 
-# [is_immunity, is_stat_booster, is_weather, is_priority, is_dmg_mod, is_contact_punish, is_unknown]
 EXPLICIT_ABILITIES_FEATURES = {
     "unknown" : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],
     'Slush Rush': [0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0],
@@ -330,6 +330,7 @@ def get_one_hot_type(poke_type) :
             type_vector[idx] = 1.0
     return type_vector
 
+
 def get_moves_json(path : str) :
     dict_moves = {}
     bad_moves = []
@@ -385,15 +386,17 @@ def get_moves_json(path : str) :
             move_vec.extend(get_one_hot_type(info_move["type"]["name"]))
 
             #------------------------- Getting the description of the move ---------------------------------------
-            for entry in info_move.get("flavor_text_entries", []):
-                if entry["language"]["name"] == "en" and entry["version_group"]["name"] == "scarlet-violet":
-                    description = entry["flavor_text"].replace('\n', ' ')
+            for entry in info_move.get("effect_entries", []):
+                if entry["language"]["name"] == "en" :
+                    description = entry["short_effect"].replace('\n', ' ')
                     break
 
             dict_moves[id] = {
                 "stats_vector": move_vec,
                 "description": description
             }
+            if description == 'No description available.' :
+                print(move)
 
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(dict_moves, f, indent=4, ensure_ascii=False)
@@ -504,6 +507,7 @@ def calc_stat(lvl : int, stat : int) :
     eff_stat = (((2 * stat + 31 + (85/4)) * lvl)/100) + 5
     return eff_stat
     
+
 def calc_effective_stat(lvl : int, bstats : list) :
     hp, *stats = bstats
     eff_HP = ((2 * hp + 31 + (85/4)) * lvl)/100 + lvl + 10
@@ -515,6 +519,9 @@ def calc_effective_stat(lvl : int, bstats : list) :
 def get_poke_json(path : str) :
     dict_poke = {}
     bad_poke = []
+
+    with open('current_sets.json') as f:
+        temp = json.load(f)
 
     for poke, id in POKE_ID.items() :
 
@@ -536,20 +543,56 @@ def get_poke_json(path : str) :
 
             info_poke = response.json()
 
+            #-----Getting the pokemon type
+            list_type = []
             for ele in info_poke['types'] : 
-                temp = ['type']['name']
+                list_type.append(ele['type']['name'])
 
+            poke_vec.append(get_one_hot_type(list_type))
 
-            poke_vec.append(info_poke["weight"])
+            #----Getting the pokemon weight
+
+            poke_vec.append([math.log10(info_poke["weight"])])
+
+            #----Getting the effectives stats
 
             bstat = []
             for ele in info_poke["stats"] :
                 bstat.append(ele["base_stat"])
 
-            with open('sets.json') as f:
-                temp = json.load(f)
-            level = temp["abomasnow"]["level"]
+            level = temp[poke]["level"]
+
+            poke_vec.append(calc_effective_stat(level, bstat))
+
+            #----Getting the potential abilities
             
+            id_abilities = []
+
+            potential_abilities = temp[poke]["abilities"]
+
+            for abi in potential_abilities :
+                id_abilities.append(ABILITIES_ID.get(abi, "Ayya je suis le pire programmeur que le monde ait connu"))
+            poke_vec.append(id_abilities)
+
+            #----Getting the potential items
+
+            id_items = []
+            test = temp[poke]
+            potential_items = test.get("items", "O")
+
+            for items in potential_items :
+                id_items.append(ITEMS_ID.get(items, 0))
+            poke_vec.append(id_items)
+
+            #----Getting the potential tera types
+            teraList = []
+
+            roles = temp[poke]["roles"]
+            for role in roles.keys() :
+                teraList += roles[role]["teraTypes"]
+            temp_set = set(teraList)
+            poke_vec.append(get_one_hot_type(list(temp_set)))
+
             dict_poke[id] = {
                 "stats_vector": poke_vec,
             }
@@ -560,8 +603,7 @@ def get_poke_json(path : str) :
     return bad_poke
 
 
-
-def get_pickle_FE(path_json : str, path_to_save : str) :
+def get_pickle_FE_emb(path_json : str, path_to_save : str) :
     model = SentenceTransformer('all-MiniLM-L6-v2')
     with open(path_json) as f:
         dico_json = json.load(f)
@@ -577,6 +619,18 @@ def get_pickle_FE(path_json : str, path_to_save : str) :
     with open(path_to_save, 'wb') as f:
             pickle.dump(pickle_dict, f)
 
+
+def get_pickle_FE(path_json : str, path_to_save : str) :
+    with open(path_json) as f:
+        dico_json = json.load(f)
+    pickle_dict = {}
+    for key, items in dico_json.items() :
+        stat_vect = np.array(items["stats_vector"], dtype=np.float32)
+        pickle_dict[key] = {
+            "stats_vector": stat_vect
+        }
+    with open(path_to_save, 'wb') as f:
+            pickle.dump(pickle_dict, f)
 
 
 
