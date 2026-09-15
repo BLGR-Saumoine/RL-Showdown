@@ -1,6 +1,9 @@
 import json
 from typing import Dict
 import requests
+import re
+
+
 
 global WEATHER_TO_ID, TERRAIN_TO_ID, STATUS_TO_ID, POKE_ID, MOVES_ID, ABILITIES_ID, ITEMS_ID
 
@@ -40,6 +43,13 @@ TYPE_TO_ID: Dict[str, int] = {
     "steel": 16,   "fairy": 17,   "stellar": 18, "unknown" : 19
 }
 
+def to_showdown_id(name: str) -> str:
+    # Met en minuscules et garde uniquement les lettres et les chiffres
+    return re.sub(r'[^a-z0-9]', '', name.lower())
+
+    # Exemple : "Oricorio-Pa'u" -> "oricoriopau"
+    # Exemple : "Iron Valiant" -> "ironvaliant"
+
 def getPoolOfInfos(dico) :
     """
     Dict : Dictionnary with the following format
@@ -78,7 +88,7 @@ def list_to_dict_ID(listofItem) :
     dico["unknown"] = 0
     it = 1
     for item in listofItem :
-        dico[item] = it
+        dico[to_showdown_id(item)] = it
         it += 1
     return dico
 

@@ -1,6 +1,8 @@
 import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
+import math
+import torch
 
 from poke_env.battle import Battle
 from poke_env.player import Gen9EnvSinglePlayer, LocalhostServerConfiguration
@@ -15,10 +17,12 @@ class PokemonRandbatsEnv(Gen9EnvSinglePlayer):
             kwargs["server_configuration"] = LocalhostServerConfiguration
 
         super().__init__(**kwargs)
+
+        self.training_mode = "random"
         
         self.action_space = spaces.Discrete(14) # 4 Attaques + 4 Attaques mais en terracristalisant + 5 pokemons à switcher + 1 cas autre au cas où
 
-        self.observation_space = spaces.Box(low=-6.0, high=1000.0, shape=(138,), dtype=np.float32)
+        self.observation_space = spaces.Box(low=-6.0, high=1000.0, shape=(380,), dtype=np.float32)
 
         """
         # =========================================================================
@@ -119,50 +123,124 @@ class PokemonRandbatsEnv(Gen9EnvSinglePlayer):
         """
         state_vec = []
 
+        #Info sur le pokemon actif du joueur 
+        self.bloc_A_C(battle.active_pokemon, state_vec)
 
-    
+        #Info sur les pokemons en reserves du joueur
+        player_reserve = [mon for mon in battle.team.values() if not mon.active]
+        self.bloc_B_E(player_reserve, state_vec)
 
+        #Info sur le pokemon actif adverse 
+        self.bloc_A_C(battle.opponent_active_pokemon, state_vec)
 
+        #Info de terrain 
+        self.bloc_D(battle, state_vec)
 
+        #Info sur les pokemons en reserves adverse
+        oppo_reserve = [mon for mon in battle.opponent_team.values() if not mon.active]
+        self.bloc_B_E(oppo_reserve, state_vec)
+
+        if len(state_vec) != 380 :
+            return np.zeros(380, dtype=np.float32)
+        else : 
+            return np.array(state_vec, dtype=np.float32)
+
+    def action_to_order(self, action, battle : Battle):
+        """
+        Returns the BattleOrder relative to the given action.
+        The action mapping is as follows: action = -2: default 
+        action = -1: forfeit 
+        0 <= action <= 5: switch 
+        6 <= action <= 9: move 
+        10 <= action <= 13: move and mega evolve Inutile ici
+        14 <= action <= 17: move and z-move Inutile ici
+        18 <= action <= 21: move and dynamax Inutile ici
+        22 <= action <= 25: move and terastallize
+        """
+        poke_env_action = 0
+        if 0 <= action <= 3 : # Attaquer simplement
+            poke_env_action = action + 6
+        elif 4 <= action <= 7 : # Attaquer en teracrystalisant
+            poke_env_action = action + 18
+        elif 8 <= action <= 13 : #Switcher
+            poke_env_action = action - 8
+        return self.action_to_order(poke_env_action, battle)
+
+    def calc_reward(self, last_turn, current_turn,) -> float:
+        # Plusieurs mode d'entrainement et reward calculées différemment en fonction du nombre d'adversaires
+        reward = 0.0
+
+        if self.training_mode == "random" :
+            reward = self.rewardVSrandom(last_turn, current_turn)
+
+        return reward
+
+    def select_action(self, battle : Battle, vec_state):
+        """
+        Espace d'action :
+        0-3 : Choisir un attaque parmis les 4 disponibles
+        4-7 : Choisir une attaque et teracrystaliser
+        8-13 : Switcher de pokemon parmis les 6 (masque d'attention par défaut sur le poke actif)
+
+        Mon objectif est de conçevoir un mask d'attention
+        """
+        mask = np.ones(14, dtype=np.float32)
+
+        # 0-3
+        active_moves = list(battle.active_pokemon.moves.values())
         
-        # Test rapide :
-        # print("Pokémon actif adverse :", battle.opponent_active_pokemon)
-        # print("Équipe adverse révélée :", battle.opponent_team)
-        
-        # ... Ta logique ici ...
-        
-        # Pour éviter que le code ne plante en attendant que tu finisses, 
-        # on retourne des zéros de la bonne taille.
-        return np.zeros(138, dtype=np.float32)
+        for i, move in enumerate(active_moves):
+            # Si l'attaque est dans la liste des cliquables renvoyée par le serveur
+            if move in battle.available_moves:
+                mask[i] = 0.0
 
+        #4-7 : pour le tera c'est très facile 
+        if battle.can_tera :
+            mask[4:8] = mask[0:4] 
 
-    def step(self, action):
-        # 3. Exécution d'un tour de jeu
-        ...
-        return observation, reward, terminated, truncated, info
+        # 8-13 les switches
 
+        for i, mon in enumerate(battle.team.values()):
+            # Si le poke est switchable
+            if mon in battle.available_switches:
+                mask[i+8] = 0.0
 
+        epsilon = self.epsEnd + (self.epsStart - self.epsEnd) * math.exp(-self.numberStep/self.epsDecay)
 
-    def bloc_A_C(self, battle: Battle, state_vec: list):
-        active = battle.active_pokemon
+        if torch.rand(1).item() < epsilon :
+            possible_action = np.where(mask==0.0)[0]
+            action = np.random.choice(possible_action)
+
+        else :
+            with torch.no_grad():
+                mask_tensor = torch.tensor(mask, dtype=torch.bool).to(self.device)
+                gpu_state = torch.tensor(vec_state).to(self.device, dtype=torch.float32)
+                action = torch.argmax(self.onlineNetwork(gpu_state).masked_fill(mask_tensor, -1e9)).item()
+        self.numberStep += 1
+        return action
+
+    def bloc_A_C(self, pokemon, state_vec: list):
+        """
+        Décris les pokemons actifs sur le terrain
+        """
 
         # Sécurité absolue : si pas de Pokémon sur le terrain (suite à un K.O) je regarde apres
-        if active is None:
-            state_vec.extend([0.0] * 18)
+        if pokemon is None:
+            state_vec.extend([0.0] * 36) # checker les dims c'est le bazar là
             return
 
         # 1. ID du Pokémon (Entier)
-        state_vec.append(POKE_ID.get(active.species, 0))
+        state_vec.append(POKE_ID.get(pokemon.species, 0))
         
-        # 2. PV restants (Déjà un flottant 0.0 - 1.0)
-        state_vec.append(active.current_hp_fraction)
+        # 2. PV restants
+        state_vec.append(pokemon.current_hp_fraction)
         
         # 3. ID du Statut
-        status_name = active.status.name if active.status is not None else "NONE"
+        status_name = pokemon.status.name if pokemon.status is not None else "NONE"
         state_vec.append(STATUS_TO_ID.get(status_name, 0))
 
         # 4 à 10. Modificateurs de stats (-6 à +6)
-        boosts = active.boosts
+        boosts = pokemon.boosts
         state_vec.extend([
             boosts.get("atk", 0),
             boosts.get("def", 0),
@@ -174,17 +252,152 @@ class PokemonRandbatsEnv(Gen9EnvSinglePlayer):
         ])
 
         # 11-14. Attaques 
-        for move in active.moves.keys() :
-            state_vec.append(MOVES_ID.get(move, 0))
+        moves = list(pokemon.moves.keys())
+        for i in range(4):
+            if i < len(moves):
+                state_vec.append(MOVES_ID.get(moves[i], 0))
+            else:
+                state_vec.append(0) # Padding si attaque inconnue/manquante
+
         # 15. Objet 
-        state_vec.append(ITEMS_ID.get(active.item, 0))
+        state_vec.append(ITEMS_ID.get(pokemon.item, 0))
         # 16. Talent 
-        state_vec.append(ABILITIES_ID.get(active.ability, 0))
+        state_vec.append(ABILITIES_ID.get(pokemon.ability, 0))
         # 17 is Téra ?
-        state_vec.append(active.is_terastallized())
+        state_vec.append(pokemon.is_terastallized)
         # 18 what Téra ?
-        tera_type = active.tera_type if active.tera_type is not None else "unknown"
-        state_vec.append(TYPE_TO_ID.get(tera_type, [0.0]*19)) # Le [0.0] * 19 correspond à la value de unknown
+        tera_type = pokemon.tera_type if pokemon.tera_type is not None else "unknown"
+        state_vec.extend(TYPE_TO_ID.get(tera_type, [0.0]*19)) # Le [0.0] * 19 correspond à la value de unknown
+
+    def bloc_B_E(self, reserve: list, state_vec: list):
+        # On force une boucle stricte de 5 itérations pour les 5 emplacements du banc
+        for i in range(5):
+            if i < len(reserve):
+                mon = reserve[i]
+                
+                # 1. ID du Pokémon
+                state_vec.append(POKE_ID.get(mon.species, 0))
+                
+                # 2. PV restants
+                state_vec.append(mon.current_hp_fraction)
+                
+                # 3. ID du Statut
+                status_name = mon.status.name if mon.status is not None else "NONE"
+                state_vec.append(STATUS_TO_ID.get(status_name, 0))
+
+                # 4 à 7. Attaques
+                moves = list(mon.moves.keys())
+                for j in range(4):
+                    if j < len(moves):
+                        state_vec.append(MOVES_ID.get(moves[j], 0))
+                    else:
+                        state_vec.append(0) 
+
+                # 8. Objet
+                item_str = mon.item if mon.item is not None else "unknown"
+                state_vec.append(ITEMS_ID.get(item_str, 0))
+
+                # 9. Talent
+                ability_str = mon.ability if mon.ability is not None else "unknown"
+                state_vec.append(ABILITIES_ID.get(ability_str, 0))
+
+                # 10. Est Téra-cristallisé ?
+                state_vec.append(1.0 if mon.is_terastallized else 0.0)
+
+                # 11 à 29. Téra-Type (One-Hot Encoding 19 dimensions)
+                if mon.tera_type is not None:
+                    tera_name = mon.tera_type.name.lower() 
+                else:
+                    tera_name = "unknown"
+                state_vec.extend(TYPE_TO_ID.get(tera_name, [0.0] * 19))
+
+            else:
+                # PADDING GÉANT : Le Pokémon est inconnu ou manquant
+                # 1 (ID) + 1 (PV) + 1 (Statut) + 4 (Attaques) + 1 (Objet) + 1 (Talent) + 1 (Téra bool) = 10 zéros
+                # + 19 zéros pour le Téra-Type One-Hot
+                state_vec.extend([0.0] * 29)
+
+    def bloc_D(self, battle: Battle, state_vec: list):
+        
+        # 1. ID de la Météo
+        weather_name = list(battle.weather.keys())[0].name if battle.weather else "NONE"
+        state_vec.append(WEATHER_TO_ID.get(weather_name, 0))
+        
+        # 2. ID du Terrain 
+        terrain_name = list(battle.fields.keys())[0].name if battle.fields else "NONE"
+        state_vec.append(TERRAIN_TO_ID.get(terrain_name, 0))
+
+        my_sides = {k.name: v for k, v in battle.side_conditions.items()}
+        opp_sides = {k.name: v for k, v in battle.opponent_side_conditions.items()}
+
+        # --- JOUEUR (7 dimensions) ---
+        state_vec.append(my_sides.get("SPIKES", 0))          # 3. Picots (0 à 3)
+        state_vec.append(my_sides.get("TOXIC_SPIKES", 0))    # 4. Pics Toxik (0 à 2)
+        state_vec.append(1 if "STEALTH_ROCK" in my_sides else 0) # 5. Piège de Roc
+        state_vec.append(1 if "STICKY_WEB" in my_sides else 0)   # 6. Toile Gluante
+        state_vec.append(1 if "AURORA_VEIL" in my_sides else 0)  # 7. Voile Aurore
+        state_vec.append(1 if "LIGHT_SCREEN" in my_sides else 0) # 8. Mur Lumière
+        state_vec.append(1 if "REFLECT" in my_sides else 0)      # 9. Protection
+
+        # --- ADVERSAIRE (7 dimensions) ---
+        state_vec.append(opp_sides.get("SPIKES", 0))          # 10. Picots
+        state_vec.append(opp_sides.get("TOXIC_SPIKES", 0))    # 11. Pics Toxik
+        state_vec.append(1 if "STEALTH_ROCK" in opp_sides else 0) # 12. Piège de Roc
+        state_vec.append(1 if "STICKY_WEB" in opp_sides else 0)   # 13. Toile Gluante
+        state_vec.append(1 if "AURORA_VEIL" in opp_sides else 0)  # 14. Voile Aurore
+        state_vec.append(1 if "LIGHT_SCREEN" in opp_sides else 0) # 15. Mur Lumière
+        state_vec.append(1 if "REFLECT" in opp_sides else 0)      # 16. Protection
+
+        # --- DROITS TÉRA-CRISTAL (2 dimensions) ---
+        # 17. Le joueur peut-il encore Téra ?
+        state_vec.append(1.0 if battle.can_tera else 0.0)
+        
+        # 18. L'adversaire peut-il encore Téra ?
+        # Showdown ne le dit pas explicitement pour l'adversaire, on vérifie si l'un de ses Pokémon l'a déjà fait
+        opp_has_tera = any(p.is_terastallized for p in battle.opponent_team.values())
+        state_vec.append(0.0 if opp_has_tera else 1.0)
+
+    def rewardVSrandom(self, last_turn, current_turn,) -> float:
+        reward = 0.0
+        """
+        Bonne récompense pour les dégat bruts, l'objectif est que le modèle comprenne les bases 
+        Évidemment la victoire et la défaite sont priorisées 
+        """
+
+        deltaPV_inflicted = 0 # Mesure la variation de PV de l'adversaire
+        deltaPV_taken = 0 # Mesure la variation de PV du joueur
+
+        PV_before = 0
+        PV_now = 0
+
+        for i, mon in enumerate(last_turn.opponent_team.values()):
+            PV_before += mon.current_hp_fraction
+
+        for i, mon in enumerate(current_turn.opponent_team.values()):
+            PV_now += mon.current_hp_fraction
+
+        deltaPV_inflicted = PV_before - PV_now
+
+        PV_before = 0
+        PV_now = 0
+
+        for i, mon in enumerate(last_turn.team.values()):
+            PV_before += mon.current_hp_fraction
+
+        for i, mon in enumerate(current_turn.team.values()):
+            PV_now += mon.current_hp_fraction
+
+        deltaPV_taken = PV_before - PV_now
+
+        reward += deltaPV_inflicted - deltaPV_taken
+
+        if current_turn.won :
+            reward += 100
+
+        elif current_turn.lost :
+            reward -= 100
+
+        return reward
 
 
     

@@ -319,6 +319,9 @@ EXPLICIT_ABILITIES_FEATURES = {
     'Mega Launcher': [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
 }
 
+#Certains noms des pokemons des sets ne sont pas ceux attendus pas pokeAPI -> enamorus (pour la forme de base) au lieu de enamorus-incarnate pour pokeAPI
+NAME_CORRECTION = {}
+
 
 def get_one_hot_type(poke_type) :
     
@@ -331,7 +334,7 @@ def get_one_hot_type(poke_type) :
     return type_vector
 
 
-def get_moves_json(path : str) :
+def get_moves_json(path : str, raw_moves : list) :
     dict_moves = {}
     bad_moves = []
 
@@ -356,7 +359,6 @@ def get_moves_json(path : str) :
         response = requests.get(f'https://pokeapi.co/api/v2/move/{clean_move}/')
 
         if response.status_code != 200 : 
-
             bad_moves.append((move,id))
 
         else :
@@ -396,7 +398,7 @@ def get_moves_json(path : str) :
                 "description": description
             }
             if description == 'No description available.' :
-                print(move)
+                print(clean_move + " Pb desc")
 
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(dict_moves, f, indent=4, ensure_ascii=False)
@@ -532,10 +534,11 @@ def get_poke_json(path : str) :
             }
             continue
 
-        response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{poke}/')
+        clean_poke = poke.replace(' ', '-')
+        response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{clean_poke}/')
 
         if response.status_code != 200 : 
-            print(poke)
+            print(poke + " Probleme api " + clean_poke)
             bad_poke.append((poke,id))
 
         else :
@@ -612,6 +615,13 @@ def get_pickle_FE_emb(path_json : str, path_to_save : str) :
         desc = items["description"]
         desc_emb = model.encode(desc).astype(np.float32)
         stat_vect = np.array(items["stats_vector"], dtype=np.float32)
+
+        if str(key) == "0":
+            desc_emb = np.zeros(384, dtype=np.float32)
+        else:
+            desc = items["description"]
+            desc_emb = model.encode(desc).astype(np.float32)
+
         pickle_dict[key] = {
             "stats_vector": stat_vect,
             "description_embedding": desc_emb
@@ -630,7 +640,7 @@ def get_pickle_FE(path_json : str, path_to_save : str) :
             "stats_vector": stat_vect
         }
     with open(path_to_save, 'wb') as f:
-            pickle.dump(pickle_dict, f)
+        pickle.dump(pickle_dict, f)
 
 
 

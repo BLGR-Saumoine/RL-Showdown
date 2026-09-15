@@ -255,6 +255,25 @@
             "Rocky Helmet"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Regenerator"
+                ],
+                "items": [
+                    "Leftovers",
+                    "Rocky Helmet"
+                ],
+                "teraTypes": [
+                    "Steel",
+                    "Water"
+                ],
+                "moves": [
+                    "Giga Drain",
+                    "Sludge Bomb",
+                    "Spore",
+                    "Stomping Tantrum"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Regenerator"
@@ -280,25 +299,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Regenerator"
-                ],
-                "items": [
-                    "Leftovers",
-                    "Rocky Helmet"
-                ],
-                "teraTypes": [
-                    "Steel",
-                    "Water"
-                ],
-                "moves": [
-                    "Giga Drain",
-                    "Sludge Bomb",
-                    "Spore",
-                    "Stomping Tantrum"
-                ]
             }
         }
     },
@@ -468,24 +468,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Bulky Attacker": {
-                "abilities": [
-                    "Intimidate"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Ground"
-                ],
-                "moves": [
-                    "Coil",
-                    "Earthquake",
-                    "Gunk Shot",
-                    "Sucker Punch"
-                ]
-            },
             "Bulky Setup": {
                 "abilities": [
                     "Intimidate"
@@ -502,6 +484,24 @@
                     "Earthquake",
                     "Gunk Shot",
                     "Trailblaze"
+                ]
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Intimidate"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Ground"
+                ],
+                "moves": [
+                    "Coil",
+                    "Earthquake",
+                    "Gunk Shot",
+                    "Sucker Punch"
                 ]
             },
             "Fast Support": {
@@ -1066,6 +1066,28 @@
                     "hp": 81
                 }
             },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Multitype"
+                ],
+                "items": [
+                    "Flame Plate"
+                ],
+                "teraTypes": [
+                    "Fire",
+                    "Ground"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Extreme Speed",
+                    "Flare Blitz",
+                    "Recover",
+                    "Swords Dance"
+                ],
+                "evs": {
+                    "hp": 81
+                }
+            },
             "Bulky Setup": {
                 "abilities": [
                     "Multitype"
@@ -1090,28 +1112,6 @@
                 },
                 "ivs": {
                     "atk": 0
-                }
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Multitype"
-                ],
-                "items": [
-                    "Flame Plate"
-                ],
-                "teraTypes": [
-                    "Fire",
-                    "Ground"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Extreme Speed",
-                    "Flare Blitz",
-                    "Recover",
-                    "Swords Dance"
-                ],
-                "evs": {
-                    "hp": 81
                 }
             }
         },
@@ -1213,29 +1213,6 @@
             "Meadow Plate"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Multitype"
-                ],
-                "items": [
-                    "Meadow Plate"
-                ],
-                "teraTypes": [
-                    "Fire"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Fire Blast",
-                    "Judgment",
-                    "Recover"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Multitype"
@@ -1251,6 +1228,29 @@
                     "Earth Power",
                     "Ice Beam",
                     "Judgment"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Multitype"
+                ],
+                "items": [
+                    "Meadow Plate"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Fire Blast",
+                    "Judgment",
+                    "Recover"
                 ],
                 "evs": {
                     "atk": 0
@@ -1303,7 +1303,8 @@
                 ],
                 "teraTypes": [
                     "Dragon",
-                    "Ground"
+                    "Fire",
+                    "Steel"
                 ],
                 "moves": [
                     "Calm Mind",
@@ -1534,6 +1535,23 @@
             "Iron Plate"
         ],
         "roles": {
+            "Bulky Support": {
+                "abilities": [
+                    "Multitype"
+                ],
+                "items": [
+                    "Iron Plate"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Judgment",
+                    "Recover",
+                    "Will-O-Wisp"
+                ]
+            },
             "Bulky Setup": {
                 "abilities": [
                     "Multitype"
@@ -1556,23 +1574,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Bulky Support": {
-                "abilities": [
-                    "Multitype"
-                ],
-                "items": [
-                    "Iron Plate"
-                ],
-                "teraTypes": [
-                    "Ghost"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Judgment",
-                    "Recover",
-                    "Will-O-Wisp"
-                ]
             }
         }
     },
@@ -1823,8 +1824,8 @@
                 ],
                 "moves": [
                     "Calm Mind",
-                    "Freezing Glare",
                     "Hurricane",
+                    "Psyshock",
                     "Recover"
                 ],
                 "evs": {
@@ -2213,6 +2214,27 @@
             "Loaded Dice"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Thermal Exchange"
+                ],
+                "items": [
+                    "Loaded Dice"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Ground"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Icicle Spear",
+                    "Scale Shot",
+                    "Swords Dance"
+                ],
+                "evs": {
+                    "hp": 81
+                }
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Thermal Exchange"
@@ -2251,27 +2273,6 @@
                     "Glaive Rush",
                     "Icicle Crash"
                 ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Thermal Exchange"
-                ],
-                "items": [
-                    "Loaded Dice"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Ground"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Icicle Spear",
-                    "Scale Shot",
-                    "Swords Dance"
-                ],
-                "evs": {
-                    "hp": 81
-                }
             }
         }
     },
@@ -2708,26 +2709,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Wallbreaker": {
-                "abilities": [
-                    "Tinted Lens"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Fighting",
-                    "Psychic",
-                    "Steel"
-                ],
-                "moves": [
-                    "Esper Wing",
-                    "Hurricane",
-                    "U-turn",
-                    "Vacuum Wave"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Tinted Lens"
@@ -2753,6 +2734,26 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Wallbreaker": {
+                "abilities": [
+                    "Tinted Lens"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Fighting",
+                    "Psychic",
+                    "Steel"
+                ],
+                "moves": [
+                    "Esper Wing",
+                    "Hurricane",
+                    "U-turn",
+                    "Vacuum Wave"
+                ]
             },
             "Setup Sweeper": {
                 "abilities": [
@@ -2822,6 +2823,25 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Chesto Berry",
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Iron Defense",
+                    "Iron Head",
+                    "Psychic Noise",
+                    "Rest"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Levitate"
@@ -2840,25 +2860,6 @@
                     "Psychic",
                     "Psychic Noise",
                     "Stealth Rock"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Levitate"
-                ],
-                "items": [
-                    "Chesto Berry",
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Iron Defense",
-                    "Iron Head",
-                    "Psychic Noise",
-                    "Rest"
                 ]
             }
         }
@@ -3005,7 +3006,7 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Attacker": {
+            "Bulky Setup": {
                 "abilities": [
                     "Unnerve"
                 ],
@@ -3013,11 +3014,10 @@
                     "Leftovers"
                 ],
                 "teraTypes": [
-                    "Fighting",
                     "Steel"
                 ],
                 "moves": [
-                    "Body Press",
+                    "Calm Mind",
                     "Encore",
                     "Giga Drain",
                     "Leech Seed",
@@ -3031,7 +3031,7 @@
                     "atk": 0
                 }
             },
-            "Bulky Setup": {
+            "Bulky Attacker": {
                 "abilities": [
                     "Unnerve"
                 ],
@@ -3039,10 +3039,11 @@
                     "Leftovers"
                 ],
                 "teraTypes": [
+                    "Fighting",
                     "Steel"
                 ],
                 "moves": [
-                    "Calm Mind",
+                    "Body Press",
                     "Encore",
                     "Giga Drain",
                     "Leech Seed",
@@ -3333,31 +3334,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Flame Body",
-                    "Flash Fire"
-                ],
-                "items": [
-                    "Heavy-Duty Boots",
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fire",
-                    "Ghost",
-                    "Grass"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Energy Ball",
-                    "Fire Blast",
-                    "Flame Charge",
-                    "Pain Split",
-                    "Shadow Ball",
-                    "Substitute",
-                    "Will-O-Wisp"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Flash Fire"
@@ -3382,6 +3358,31 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Flame Body",
+                    "Flash Fire"
+                ],
+                "items": [
+                    "Heavy-Duty Boots",
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fire",
+                    "Ghost",
+                    "Grass"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Energy Ball",
+                    "Fire Blast",
+                    "Flame Charge",
+                    "Pain Split",
+                    "Shadow Ball",
+                    "Substitute",
+                    "Will-O-Wisp"
+                ]
             }
         }
     },
@@ -3489,6 +3490,23 @@
             "Rocky Helmet"
         ],
         "roles": {
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Bulletproof"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Iron Defense",
+                    "Synthesis",
+                    "Trailblaze"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Bulletproof"
@@ -3508,23 +3526,6 @@
                     "Synthesis",
                     "Wood Hammer"
                 ]
-            },
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Bulletproof"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Iron Defense",
-                    "Synthesis",
-                    "Trailblaze"
-                ]
             }
         }
     },
@@ -3539,31 +3540,6 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Beads of Ruin"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fire"
-                ],
-                "moves": [
-                    "Dark Pulse",
-                    "Fire Blast",
-                    "Nasty Plot",
-                    "Psychic",
-                    "Will-O-Wisp"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Beads of Ruin"
@@ -3581,6 +3557,31 @@
                     "Flamethrower",
                     "Overheat",
                     "Psychic"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Beads of Ruin"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fire"
+                ],
+                "moves": [
+                    "Dark Pulse",
+                    "Fire Blast",
+                    "Nasty Plot",
+                    "Psychic",
+                    "Will-O-Wisp"
                 ],
                 "evs": {
                     "atk": 0
@@ -3659,33 +3660,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Levitate"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Fairy",
-                    "Poison",
-                    "Steel"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Dazzling Gleam",
-                    "Psychic Noise",
-                    "Psyshock",
-                    "Recover"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Levitate"
@@ -3730,6 +3704,33 @@
                     "Recover",
                     "Thunder Wave"
                 ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Fairy",
+                    "Poison",
+                    "Steel"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Dazzling Gleam",
+                    "Psychic Noise",
+                    "Psyshock",
+                    "Recover"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
             }
         }
     },
@@ -3774,23 +3775,6 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
-            "Fast Support": {
-                "abilities": [
-                    "Libero"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Grass"
-                ],
-                "moves": [
-                    "Court Change",
-                    "Pyro Ball",
-                    "U-turn",
-                    "Will-O-Wisp"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Libero"
@@ -3832,6 +3816,23 @@
                 "evs": {
                     "hp": 81
                 }
+            },
+            "Fast Support": {
+                "abilities": [
+                    "Libero"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "moves": [
+                    "Court Change",
+                    "Pyro Ball",
+                    "U-turn",
+                    "Will-O-Wisp"
+                ]
             }
         }
     },
@@ -3845,24 +3846,6 @@
             "Choice Specs"
         ],
         "roles": {
-            "AV Pivot": {
-                "abilities": [
-                    "Mega Launcher"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Dragon"
-                ],
-                "moves": [
-                    "Aura Sphere",
-                    "Dark Pulse",
-                    "Dragon Pulse",
-                    "U-turn",
-                    "Water Pulse"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Mega Launcher"
@@ -3880,6 +3863,24 @@
                     "Dark Pulse",
                     "Dragon Pulse",
                     "Ice Beam",
+                    "U-turn",
+                    "Water Pulse"
+                ]
+            },
+            "AV Pivot": {
+                "abilities": [
+                    "Mega Launcher"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Dragon"
+                ],
+                "moves": [
+                    "Aura Sphere",
+                    "Dark Pulse",
+                    "Dragon Pulse",
                     "U-turn",
                     "Water Pulse"
                 ]
@@ -3957,27 +3958,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Unaware",
-                    "Water Absorb"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Flying",
-                    "Steel"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Gunk Shot",
-                    "Poison Jab",
-                    "Recover",
-                    "Spikes",
-                    "Toxic"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Unaware",
@@ -3998,6 +3978,27 @@
                     "Recover",
                     "Stealth Rock",
                     "Toxic Spikes"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Unaware",
+                    "Water Absorb"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Flying",
+                    "Steel"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Gunk Shot",
+                    "Poison Jab",
+                    "Recover",
+                    "Spikes",
+                    "Toxic"
                 ]
             }
         }
@@ -4116,6 +4117,25 @@
                     "atk": 0
                 }
             },
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Justified"
+                ],
+                "items": [
+                    "Leftovers",
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Iron Head",
+                    "Stone Edge",
+                    "Swords Dance",
+                    "Taunt"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Justified"
@@ -4134,25 +4154,6 @@
                     "Stealth Rock",
                     "Thunder Wave",
                     "Volt Switch"
-                ]
-            },
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Justified"
-                ],
-                "items": [
-                    "Leftovers",
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Iron Head",
-                    "Stone Edge",
-                    "Swords Dance",
-                    "Taunt"
                 ]
             }
         }
@@ -4349,6 +4350,25 @@
             "Choice Band"
         ],
         "roles": {
+            "AV Pivot": {
+                "abilities": [
+                    "Iron Fist"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Fighting",
+                    "Ground",
+                    "Water"
+                ],
+                "moves": [
+                    "Drain Punch",
+                    "Earthquake",
+                    "Ice Hammer",
+                    "Knock Off"
+                ]
+            },
             "Wallbreaker": {
                 "abilities": [
                     "Iron Fist"
@@ -4365,25 +4385,6 @@
                     "Drain Punch",
                     "Earthquake",
                     "Gunk Shot",
-                    "Ice Hammer",
-                    "Knock Off"
-                ]
-            },
-            "AV Pivot": {
-                "abilities": [
-                    "Iron Fist"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Fighting",
-                    "Ground",
-                    "Water"
-                ],
-                "moves": [
-                    "Drain Punch",
-                    "Earthquake",
                     "Ice Hammer",
                     "Knock Off"
                 ]
@@ -4673,23 +4674,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Overgrow"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Ghost"
-                ],
-                "moves": [
-                    "Leaf Blade",
-                    "Poltergeist",
-                    "Shadow Sneak",
-                    "Swords Dance"
-                ]
-            },
             "Fast Support": {
                 "abilities": [
                     "Overgrow"
@@ -4711,6 +4695,23 @@
                     "Roost",
                     "Spirit Shackle",
                     "U-turn"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Overgrow"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "moves": [
+                    "Leaf Blade",
+                    "Poltergeist",
+                    "Shadow Sneak",
+                    "Swords Dance"
                 ]
             }
         }
@@ -4934,6 +4935,25 @@
             "Life Orb"
         ],
         "roles": {
+            "Wallbreaker": {
+                "abilities": [
+                    "Pressure"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fighting",
+                    "Psychic"
+                ],
+                "moves": [
+                    "Ice Beam",
+                    "Knock Off",
+                    "Psycho Boost",
+                    "Superpower"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Pressure"
@@ -4949,25 +4969,6 @@
                 ],
                 "moves": [
                     "Extreme Speed",
-                    "Knock Off",
-                    "Psycho Boost",
-                    "Superpower"
-                ]
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Pressure"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fighting",
-                    "Psychic"
-                ],
-                "moves": [
-                    "Ice Beam",
                     "Knock Off",
                     "Psycho Boost",
                     "Superpower"
@@ -5163,25 +5164,6 @@
             "Leftovers"
         ],
         "roles": {
-            "AV Pivot": {
-                "abilities": [
-                    "Pressure"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Flying",
-                    "Steel"
-                ],
-                "moves": [
-                    "Draco Meteor",
-                    "Dragon Tail",
-                    "Fire Blast",
-                    "Heavy Slam"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Pressure"
@@ -5200,6 +5182,25 @@
                     "Heavy Slam",
                     "Stealth Rock",
                     "Thunder Wave"
+                ]
+            },
+            "AV Pivot": {
+                "abilities": [
+                    "Pressure"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Flying",
+                    "Steel"
+                ],
+                "moves": [
+                    "Draco Meteor",
+                    "Dragon Tail",
+                    "Fire Blast",
+                    "Heavy Slam"
                 ]
             }
         }
@@ -5267,24 +5268,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Clear Body"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Water"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Diamond Storm",
-                    "Draining Kiss",
-                    "Earth Power"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Clear Body"
@@ -5303,6 +5286,24 @@
                     "Moonblast",
                     "Rock Polish",
                     "Stealth Rock"
+                ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Clear Body"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Water"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Diamond Storm",
+                    "Draining Kiss",
+                    "Earth Power"
                 ]
             }
         }
@@ -5658,6 +5659,23 @@
             "White Herb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Strong Jaw"
+                ],
+                "items": [
+                    "White Herb"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "moves": [
+                    "Crunch",
+                    "Liquidation",
+                    "Shell Smash",
+                    "Stone Edge"
+                ]
+            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Shell Armor",
@@ -5672,23 +5690,6 @@
                 ],
                 "moves": [
                     "Earthquake",
-                    "Liquidation",
-                    "Shell Smash",
-                    "Stone Edge"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Strong Jaw"
-                ],
-                "items": [
-                    "White Herb"
-                ],
-                "teraTypes": [
-                    "Dark"
-                ],
-                "moves": [
-                    "Crunch",
                     "Liquidation",
                     "Shell Smash",
                     "Stone Edge"
@@ -5753,6 +5754,43 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Rattled"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Ghost",
+                    "Ground",
+                    "Poison"
+                ],
+                "moves": [
+                    "Boomburst",
+                    "Earthquake",
+                    "Roost",
+                    "Toxic"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Serene Grace"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Ghost",
+                    "Ground"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Glare",
+                    "Headbutt",
+                    "Roost"
+                ]
+            },
             "Bulky Setup": {
                 "abilities": [
                     "Rattled"
@@ -5777,43 +5815,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Bulky Support": {
-                "abilities": [
-                    "Serene Grace"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Ghost",
-                    "Ground"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Glare",
-                    "Headbutt",
-                    "Roost"
-                ]
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Rattled"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Ghost",
-                    "Ground",
-                    "Poison"
-                ],
-                "moves": [
-                    "Boomburst",
-                    "Earthquake",
-                    "Roost",
-                    "Toxic"
-                ]
             }
         }
     },
@@ -5824,16 +5825,14 @@
         ],
         "items": [
             "Choice Band",
-            "Focus Sash",
             "Life Orb"
         ],
         "roles": {
-            "Fast Support": {
+            "Fast Attacker": {
                 "abilities": [
                     "Arena Trap"
                 ],
                 "items": [
-                    "Focus Sash",
                     "Life Orb"
                 ],
                 "teraTypes": [
@@ -5997,23 +5996,6 @@
                     "Trick"
                 ]
             },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Frisk"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Focus Punch",
-                    "Pain Split",
-                    "Poltergeist",
-                    "Substitute"
-                ]
-            },
             "Bulky Support": {
                 "abilities": [
                     "Frisk"
@@ -6031,6 +6013,23 @@
                     "Poltergeist",
                     "Shadow Sneak",
                     "Will-O-Wisp"
+                ]
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Frisk"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Focus Punch",
+                    "Pain Split",
+                    "Poltergeist",
+                    "Substitute"
                 ]
             }
         }
@@ -6274,6 +6273,29 @@
             "Life Orb"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Soundproof"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Poison"
+                ],
+                "moves": [
+                    "Giga Drain",
+                    "Leech Seed",
+                    "Substitute",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Aftermath",
@@ -6294,29 +6316,6 @@
                     "Thunder Wave",
                     "Thunderbolt",
                     "Volt Switch"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Soundproof"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Poison"
-                ],
-                "moves": [
-                    "Giga Drain",
-                    "Leech Seed",
-                    "Substitute",
-                    "Thunderbolt"
                 ],
                 "evs": {
                     "atk": 0
@@ -6345,24 +6344,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Reckless"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting",
-                    "Grass"
-                ],
-                "moves": [
-                    "Bulk Up",
-                    "Drain Punch",
-                    "Flare Blitz",
-                    "Trailblaze"
-                ]
-            },
             "AV Pivot": {
                 "abilities": [
                     "Reckless"
@@ -6403,6 +6384,24 @@
                     "Knock Off",
                     "Wild Charge"
                 ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Reckless"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting",
+                    "Grass"
+                ],
+                "moves": [
+                    "Bulk Up",
+                    "Drain Punch",
+                    "Flare Blitz",
+                    "Trailblaze"
+                ]
             }
         }
     },
@@ -6430,7 +6429,6 @@
                     "Flip Turn",
                     "Ice Beam",
                     "Knock Off",
-                    "Roar",
                     "Roost",
                     "Stealth Rock",
                     "Surf",
@@ -6507,6 +6505,24 @@
             "Weakness Policy"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Overcoat"
+                ],
+                "items": [
+                    "Weakness Policy"
+                ],
+                "teraTypes": [
+                    "Ground"
+                ],
+                "moves": [
+                    "Agility",
+                    "Earth Power",
+                    "Moonblast",
+                    "Mystical Fire",
+                    "Superpower"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Overcoat"
@@ -6524,24 +6540,6 @@
                     "Moonblast",
                     "Mystical Fire",
                     "Psychic",
-                    "Superpower"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Overcoat"
-                ],
-                "items": [
-                    "Weakness Policy"
-                ],
-                "teraTypes": [
-                    "Ground"
-                ],
-                "moves": [
-                    "Agility",
-                    "Earth Power",
-                    "Moonblast",
-                    "Mystical Fire",
                     "Superpower"
                 ]
             }
@@ -6706,6 +6704,31 @@
             "Rocky Helmet"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Pressure"
+                ],
+                "items": [
+                    "Leftovers",
+                    "Rocky Helmet"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Fire"
+                ],
+                "moves": [
+                    "Dynamax Cannon",
+                    "Fire Blast",
+                    "Recover",
+                    "Sludge Bomb"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Setup Sweeper": {
                 "abilities": [
                     "Pressure"
@@ -6749,31 +6772,6 @@
                     "Recover",
                     "Toxic",
                     "Toxic Spikes"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Pressure"
-                ],
-                "items": [
-                    "Leftovers",
-                    "Rocky Helmet"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Fire"
-                ],
-                "moves": [
-                    "Dynamax Cannon",
-                    "Fire Blast",
-                    "Recover",
-                    "Sludge Bomb"
                 ],
                 "evs": {
                     "atk": 0
@@ -6851,6 +6849,31 @@
             "Sitrus Berry"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Harvest"
+                ],
+                "items": [
+                    "Sitrus Berry"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Giga Drain",
+                    "Psychic",
+                    "Psyshock",
+                    "Sleep Powder",
+                    "Substitute"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Support": {
                 "abilities": [
                     "Harvest"
@@ -6900,31 +6923,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Harvest"
-                ],
-                "items": [
-                    "Sitrus Berry"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Giga Drain",
-                    "Psychic",
-                    "Psyshock",
-                    "Sleep Powder",
-                    "Substitute"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
             }
         },
         "evs": {
@@ -6969,27 +6967,6 @@
                     "atk": 0
                 }
             },
-            "Fast Attacker": {
-                "abilities": [
-                    "Harvest"
-                ],
-                "items": [
-                    "Sitrus Berry"
-                ],
-                "teraTypes": [
-                    "Fire"
-                ],
-                "moves": [
-                    "Draco Meteor",
-                    "Dragon Tail",
-                    "Flamethrower",
-                    "Knock Off",
-                    "Moonlight",
-                    "Sleep Powder",
-                    "Stun Spore",
-                    "Wood Hammer"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Frisk"
@@ -7012,6 +6989,27 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Harvest"
+                ],
+                "items": [
+                    "Sitrus Berry"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "moves": [
+                    "Draco Meteor",
+                    "Dragon Tail",
+                    "Flamethrower",
+                    "Knock Off",
+                    "Moonlight",
+                    "Sleep Powder",
+                    "Stun Spore",
+                    "Wood Hammer"
+                ]
             }
         }
     },
@@ -7182,24 +7180,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Fast Attacker": {
-                "abilities": [
-                    "Scrappy"
-                ],
-                "items": [
-                    "Choice Band",
-                    "Choice Scarf"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Brave Bird",
-                    "Close Combat",
-                    "Throat Chop",
-                    "U-turn"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Scrappy"
@@ -7217,6 +7197,24 @@
                     "Roost",
                     "Swords Dance",
                     "Throat Chop"
+                ]
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Scrappy"
+                ],
+                "items": [
+                    "Choice Band",
+                    "Choice Scarf"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Brave Bird",
+                    "Close Combat",
+                    "Throat Chop",
+                    "U-turn"
                 ]
             }
         }
@@ -7422,6 +7420,30 @@
             "Life Orb"
         ],
         "roles": {
+            "Wallbreaker": {
+                "abilities": [
+                    "Protosynthesis"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "moves": [
+                    "Moonblast",
+                    "Mystical Fire",
+                    "Psyshock",
+                    "Shadow Ball",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Setup Sweeper": {
                 "abilities": [
                     "Protosynthesis"
@@ -7437,30 +7459,6 @@
                 ],
                 "moves": [
                     "Calm Mind",
-                    "Moonblast",
-                    "Mystical Fire",
-                    "Psyshock",
-                    "Shadow Ball",
-                    "Thunderbolt"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Protosynthesis"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Fairy"
-                ],
-                "moves": [
                     "Moonblast",
                     "Mystical Fire",
                     "Psyshock",
@@ -7941,6 +7939,24 @@
                     "Stealth Rock"
                 ]
             },
+            "Bulky Setup": {
+                "abilities": [
+                    "Purifying Salt"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Ghost"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Iron Defense",
+                    "Recover",
+                    "Salt Cure"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Purifying Salt"
@@ -7959,24 +7975,6 @@
                     "Salt Cure",
                     "Stealth Rock"
                 ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Purifying Salt"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Ghost"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Iron Defense",
-                    "Recover",
-                    "Salt Cure"
-                ]
             }
         }
     },
@@ -7989,24 +7987,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Storm Drain"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Poison"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Recover",
-                    "Sludge Bomb",
-                    "Stealth Rock",
-                    "Surf"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Storm Drain"
@@ -8024,6 +8004,24 @@
                     "Ice Beam",
                     "Recover",
                     "Spikes",
+                    "Stealth Rock",
+                    "Surf"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Storm Drain"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Poison"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Recover",
+                    "Sludge Bomb",
                     "Stealth Rock",
                     "Surf"
                 ]
@@ -8182,30 +8180,6 @@
             "Eviolite"
         ],
         "roles": {
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Sap Sipper"
-                ],
-                "items": [
-                    "Eviolite"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Normal"
-                ],
-                "moves": [
-                    "Hyper Voice",
-                    "Nasty Plot",
-                    "Psyshock",
-                    "Thunderbolt"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Setup": {
                 "abilities": [
                     "Sap Sipper"
@@ -8224,6 +8198,30 @@
                     "Psychic",
                     "Psyshock",
                     "Shadow Ball",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Sap Sipper"
+                ],
+                "items": [
+                    "Eviolite"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Normal"
+                ],
+                "moves": [
+                    "Hyper Voice",
+                    "Nasty Plot",
+                    "Psyshock",
                     "Thunderbolt"
                 ],
                 "evs": {
@@ -8273,24 +8271,6 @@
                     "atk": 0
                 }
             },
-            "Bulky Support": {
-                "abilities": [
-                    "Pressure"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fairy"
-                ],
-                "moves": [
-                    "Defog",
-                    "Dragon Tail",
-                    "Rest",
-                    "Shadow Ball",
-                    "Will-O-Wisp"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Pressure"
@@ -8306,6 +8286,24 @@
                     "Rest",
                     "Shadow Ball",
                     "Sleep Talk",
+                    "Will-O-Wisp"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Pressure"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "moves": [
+                    "Defog",
+                    "Dragon Tail",
+                    "Rest",
+                    "Shadow Ball",
                     "Will-O-Wisp"
                 ]
             }
@@ -8483,28 +8481,6 @@
             "Power Herb"
         ],
         "roles": {
-            "Fast Support": {
-                "abilities": [
-                    "Toxic Debris"
-                ],
-                "items": [
-                    "Air Balloon",
-                    "Assault Vest",
-                    "Focus Sash",
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Ground"
-                ],
-                "moves": [
-                    "Earth Power",
-                    "Mortal Spin",
-                    "Power Gem",
-                    "Sludge Wave",
-                    "Spikes",
-                    "Stealth Rock"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Toxic Debris"
@@ -8527,6 +8503,28 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Fast Support": {
+                "abilities": [
+                    "Toxic Debris"
+                ],
+                "items": [
+                    "Air Balloon",
+                    "Assault Vest",
+                    "Focus Sash",
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Ground"
+                ],
+                "moves": [
+                    "Earth Power",
+                    "Mortal Spin",
+                    "Power Gem",
+                    "Sludge Wave",
+                    "Spikes",
+                    "Stealth Rock"
+                ]
             }
         }
     },
@@ -8618,27 +8616,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Fast Attacker": {
-                "abilities": [
-                    "Cloud Nine",
-                    "Swift Swim"
-                ],
-                "items": [
-                    "Choice Specs",
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Grass",
-                    "Water"
-                ],
-                "moves": [
-                    "Flip Turn",
-                    "Grass Knot",
-                    "Hydro Pump",
-                    "Ice Beam",
-                    "Nasty Plot"
-                ]
-            },
             "Bulky Setup": {
                 "abilities": [
                     "Cloud Nine",
@@ -8663,6 +8640,27 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Cloud Nine",
+                    "Swift Swim"
+                ],
+                "items": [
+                    "Choice Specs",
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Grass",
+                    "Water"
+                ],
+                "moves": [
+                    "Flip Turn",
+                    "Grass Knot",
+                    "Hydro Pump",
+                    "Ice Beam",
+                    "Nasty Plot"
+                ]
             }
         }
     },
@@ -8709,6 +8707,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Galvanize"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Flying",
+                    "Grass"
+                ],
+                "moves": [
+                    "Double-Edge",
+                    "Earthquake",
+                    "Rock Polish",
+                    "Stone Edge"
+                ]
+            },
             "Wallbreaker": {
                 "abilities": [
                     "Galvanize"
@@ -8725,24 +8741,6 @@
                     "Double-Edge",
                     "Earthquake",
                     "Explosion",
-                    "Stone Edge"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Galvanize"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Flying",
-                    "Grass"
-                ],
-                "moves": [
-                    "Double-Edge",
-                    "Earthquake",
-                    "Rock Polish",
                     "Stone Edge"
                 ]
             }
@@ -8863,36 +8861,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Fast Attacker": {
-                "abilities": [
-                    "Shadow Tag"
-                ],
-                "items": [
-                    "Choice Scarf"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fairy",
-                    "Fighting",
-                    "Flying",
-                    "Ghost",
-                    "Ground",
-                    "Psychic",
-                    "Steel"
-                ],
-                "moves": [
-                    "Dark Pulse",
-                    "Focus Blast",
-                    "Psychic",
-                    "Trick"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Setup": {
                 "abilities": [
                     "Shadow Tag"
@@ -8923,6 +8891,36 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Shadow Tag"
+                ],
+                "items": [
+                    "Choice Scarf"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fairy",
+                    "Fighting",
+                    "Flying",
+                    "Ghost",
+                    "Ground",
+                    "Psychic",
+                    "Steel"
+                ],
+                "moves": [
+                    "Dark Pulse",
+                    "Focus Blast",
+                    "Psychic",
+                    "Trick"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
             }
         },
         "evs": {
@@ -8941,23 +8939,6 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Protosynthesis"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Fairy"
-                ],
-                "moves": [
-                    "Dragon Dance",
-                    "Heat Crash",
-                    "Morning Sun",
-                    "Outrage"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Protosynthesis"
@@ -8972,6 +8953,23 @@
                     "Dragon Dance",
                     "Earthquake",
                     "Heat Crash",
+                    "Outrage"
+                ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Protosynthesis"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "moves": [
+                    "Dragon Dance",
+                    "Heat Crash",
+                    "Morning Sun",
                     "Outrage"
                 ]
             }
@@ -8989,6 +8987,23 @@
             "Life Orb"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Prankster"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "moves": [
+                    "Encore",
+                    "Gunk Shot",
+                    "Knock Off",
+                    "Parting Shot"
+                ]
+            },
             "Setup Sweeper": {
                 "abilities": [
                     "Poison Touch"
@@ -9021,23 +9036,6 @@
                     "Knock Off",
                     "Super Fang",
                     "U-turn"
-                ]
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Prankster"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Dark"
-                ],
-                "moves": [
-                    "Encore",
-                    "Gunk Shot",
-                    "Knock Off",
-                    "Parting Shot"
                 ]
             }
         }
@@ -9463,6 +9461,23 @@
             "Choice Band"
         ],
         "roles": {
+            "Wallbreaker": {
+                "abilities": [
+                    "Stakeout"
+                ],
+                "items": [
+                    "Choice Band"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "moves": [
+                    "Double-Edge",
+                    "Earthquake",
+                    "Knock Off",
+                    "U-turn"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Adaptability",
@@ -9473,23 +9488,6 @@
                 ],
                 "teraTypes": [
                     "Ground"
-                ],
-                "moves": [
-                    "Double-Edge",
-                    "Earthquake",
-                    "Knock Off",
-                    "U-turn"
-                ]
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Stakeout"
-                ],
-                "items": [
-                    "Choice Band"
-                ],
-                "teraTypes": [
-                    "Normal"
                 ],
                 "moves": [
                     "Double-Edge",
@@ -9727,24 +9725,6 @@
             "Lum Berry"
         ],
         "roles": {
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Mold Breaker"
-                ],
-                "items": [
-                    "Loaded Dice"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Earthquake",
-                    "Iron Head",
-                    "Scale Shot",
-                    "Swords Dance"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Mold Breaker"
@@ -9761,6 +9741,24 @@
                     "Earthquake",
                     "Iron Head",
                     "Outrage"
+                ]
+            },
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Mold Breaker"
+                ],
+                "items": [
+                    "Loaded Dice"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Earthquake",
+                    "Iron Head",
+                    "Scale Shot",
+                    "Swords Dance"
                 ]
             }
         }
@@ -9859,24 +9857,6 @@
             "Rocky Helmet"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Sand Stream"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Rock",
-                    "Steel"
-                ],
-                "moves": [
-                    "Curse",
-                    "Earthquake",
-                    "Slack Off",
-                    "Stone Edge"
-                ]
-            },
             "Bulky Support": {
                 "abilities": [
                     "Sand Stream"
@@ -9897,6 +9877,24 @@
                     "Stone Edge",
                     "Whirlwind"
                 ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Sand Stream"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Rock",
+                    "Steel"
+                ],
+                "moves": [
+                    "Curse",
+                    "Earthquake",
+                    "Slack Off",
+                    "Stone Edge"
+                ]
             }
         }
     },
@@ -9911,26 +9909,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Iron Fist"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Poison",
-                    "Steel"
-                ],
-                "moves": [
-                    "Bulk Up",
-                    "Drain Punch",
-                    "Knock Off",
-                    "Poison Jab",
-                    "Rapid Spin"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Iron Fist"
@@ -9950,6 +9928,26 @@
                     "Mach Punch",
                     "Rapid Spin",
                     "Swords Dance"
+                ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Iron Fist"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Poison",
+                    "Steel"
+                ],
+                "moves": [
+                    "Bulk Up",
+                    "Drain Punch",
+                    "Knock Off",
+                    "Poison Jab",
+                    "Rapid Spin"
                 ]
             },
             "Bulky Support": {
@@ -10042,23 +10040,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Technician"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Ice"
-                ],
-                "moves": [
-                    "Bulk Up",
-                    "Close Combat",
-                    "Rapid Spin",
-                    "Triple Axel"
-                ]
-            },
             "Bulky Support": {
                 "abilities": [
                     "Intimidate"
@@ -10076,6 +10057,23 @@
                     "Rapid Spin",
                     "Stone Edge",
                     "Sucker Punch"
+                ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Technician"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Ice"
+                ],
+                "moves": [
+                    "Bulk Up",
+                    "Close Combat",
+                    "Rapid Spin",
+                    "Triple Axel"
                 ]
             }
         }
@@ -10214,26 +10212,6 @@
             "Choice Scarf"
         ],
         "roles": {
-            "Bulky Attacker": {
-                "abilities": [
-                    "Magician"
-                ],
-                "items": [
-                    "Assault Vest",
-                    "Choice Scarf"
-                ],
-                "teraTypes": [
-                    "Fighting",
-                    "Poison"
-                ],
-                "moves": [
-                    "Focus Blast",
-                    "Gunk Shot",
-                    "Hyperspace Fury",
-                    "Psychic",
-                    "Trick"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Magician"
@@ -10252,6 +10230,26 @@
                     "Hyperspace Fury",
                     "Trick",
                     "Zen Headbutt"
+                ]
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Magician"
+                ],
+                "items": [
+                    "Assault Vest",
+                    "Choice Scarf"
+                ],
+                "teraTypes": [
+                    "Fighting",
+                    "Poison"
+                ],
+                "moves": [
+                    "Focus Blast",
+                    "Gunk Shot",
+                    "Hyperspace Fury",
+                    "Psychic",
+                    "Trick"
                 ]
             }
         }
@@ -10298,41 +10296,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Fluffy"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Poltergeist",
-                    "Rest",
-                    "Sleep Talk"
-                ]
-            },
-            "AV Pivot": {
-                "abilities": [
-                    "Fluffy"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Play Rough",
-                    "Poltergeist",
-                    "Shadow Sneak"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Fluffy"
@@ -10353,6 +10316,41 @@
                     "Trick",
                     "Will-O-Wisp"
                 ]
+            },
+            "AV Pivot": {
+                "abilities": [
+                    "Fluffy"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Play Rough",
+                    "Poltergeist",
+                    "Shadow Sneak"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Fluffy"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Poltergeist",
+                    "Rest",
+                    "Sleep Talk"
+                ]
             }
         }
     },
@@ -10368,6 +10366,31 @@
             "Life Orb"
         ],
         "roles": {
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Regenerator"
+                ],
+                "items": [
+                    "Leftovers",
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Earth Power",
+                    "Fickle Beam",
+                    "Giga Drain",
+                    "Nasty Plot",
+                    "Recover"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "AV Pivot": {
                 "abilities": [
                     "Regenerator"
@@ -10402,31 +10425,6 @@
                     "Earth Power",
                     "Fickle Beam",
                     "Leaf Storm"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Regenerator"
-                ],
-                "items": [
-                    "Leftovers",
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Earth Power",
-                    "Fickle Beam",
-                    "Giga Drain",
-                    "Nasty Plot",
-                    "Recover"
                 ],
                 "evs": {
                     "atk": 0
@@ -10583,6 +10581,23 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Intimidate"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "moves": [
+                    "Flare Blitz",
+                    "Knock Off",
+                    "Swords Dance",
+                    "Trailblaze"
+                ]
+            },
             "AV Pivot": {
                 "abilities": [
                     "Intimidate"
@@ -10600,23 +10615,6 @@
                     "Knock Off",
                     "Overheat",
                     "U-turn"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Intimidate"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Grass"
-                ],
-                "moves": [
-                    "Flare Blitz",
-                    "Knock Off",
-                    "Swords Dance",
-                    "Trailblaze"
                 ]
             },
             "Fast Attacker": {
@@ -11154,40 +11152,9 @@
             "Quark Drive"
         ],
         "items": [
-            "Air Balloon",
-            "Assault Vest",
-            "Booster Energy",
-            "Choice Band",
-            "Choice Scarf",
-            "Heavy-Duty Boots"
+            "Booster Energy"
         ],
         "roles": {
-            "Fast Support": {
-                "abilities": [
-                    "Quark Drive"
-                ],
-                "items": [
-                    "Air Balloon",
-                    "Assault Vest",
-                    "Choice Band",
-                    "Choice Scarf",
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Flying",
-                    "Grass",
-                    "Water"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Ice Punch",
-                    "Spikes",
-                    "Stealth Rock",
-                    "Stone Edge",
-                    "Volt Switch",
-                    "Wild Charge"
-                ]
-            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Quark Drive"
@@ -11254,6 +11221,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Quark Drive"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fighting"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Knock Off",
+                    "Spirit Break",
+                    "Swords Dance"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Quark Drive"
@@ -11292,24 +11277,6 @@
                     "Knock Off",
                     "Moonblast"
                 ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Quark Drive"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fighting"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Knock Off",
-                    "Spirit Break",
-                    "Swords Dance"
-                ]
             }
         }
     },
@@ -11324,20 +11291,23 @@
             "Leftovers"
         ],
         "roles": {
-            "Fast Support": {
+            "Bulky Support": {
                 "abilities": [
                     "Serene Grace"
                 ],
                 "items": [
+                    "Choice Scarf",
                     "Leftovers"
                 ],
                 "teraTypes": [
                     "Water"
                 ],
                 "moves": [
-                    "Body Slam",
+                    "Healing Wish",
                     "Iron Head",
                     "Protect",
+                    "Psychic",
+                    "U-turn",
                     "Wish"
                 ]
             },
@@ -11361,23 +11331,20 @@
                     "U-turn"
                 ]
             },
-            "Bulky Support": {
+            "Fast Support": {
                 "abilities": [
                     "Serene Grace"
                 ],
                 "items": [
-                    "Choice Scarf",
                     "Leftovers"
                 ],
                 "teraTypes": [
                     "Water"
                 ],
                 "moves": [
-                    "Healing Wish",
+                    "Body Slam",
                     "Iron Head",
                     "Protect",
-                    "Psychic",
-                    "U-turn",
                     "Wish"
                 ]
             }
@@ -11483,6 +11450,23 @@
             "Infiltrator"
         ],
         "roles": {
+            "Bulky Support": {
+                "abilities": [
+                    "Infiltrator"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Acrobatics",
+                    "Leech Seed",
+                    "Strength Sap",
+                    "Substitute"
+                ],
+                "evs": {
+                    "hp": 81
+                }
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Infiltrator"
@@ -11496,23 +11480,6 @@
                     "Sleep Powder",
                     "Strength Sap",
                     "U-turn"
-                ],
-                "evs": {
-                    "hp": 81
-                }
-            },
-            "Bulky Support": {
-                "abilities": [
-                    "Infiltrator"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Acrobatics",
-                    "Leech Seed",
-                    "Strength Sap",
-                    "Substitute"
                 ],
                 "evs": {
                     "hp": 81
@@ -11631,7 +11598,8 @@
                 ],
                 "teraTypes": [
                     "Dark",
-                    "Flying"
+                    "Flying",
+                    "Ghost"
                 ],
                 "moves": [
                     "Iron Head",
@@ -11818,23 +11786,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Prankster"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Water"
-                ],
-                "moves": [
-                    "Magnet Rise",
-                    "Play Rough",
-                    "Spikes",
-                    "Thunder Wave"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Prankster"
@@ -11858,6 +11809,23 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Prankster"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "moves": [
+                    "Magnet Rise",
+                    "Play Rough",
+                    "Spikes",
+                    "Thunder Wave"
+                ]
             }
         }
     },
@@ -12276,13 +12244,13 @@
                 ],
                 "teraTypes": [
                     "Dragon",
-                    "Fire"
+                    "Ice"
                 ],
                 "moves": [
                     "Draco Meteor",
                     "Earth Power",
                     "Freeze-Dry",
-                    "Fusion Flare"
+                    "Ice Beam"
                 ],
                 "evs": {
                     "atk": 0
@@ -12371,29 +12339,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Fast Support": {
-                "abilities": [
-                    "Volt Absorb"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Flying"
-                ],
-                "moves": [
-                    "Scald",
-                    "Thunder Wave",
-                    "Thunderbolt",
-                    "Volt Switch"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Volt Absorb"
@@ -12409,6 +12354,29 @@
                     "Scald",
                     "Thunder Wave",
                     "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Fast Support": {
+                "abilities": [
+                    "Volt Absorb"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Flying"
+                ],
+                "moves": [
+                    "Scald",
+                    "Thunder Wave",
+                    "Thunderbolt",
+                    "Volt Switch"
                 ],
                 "evs": {
                     "atk": 0
@@ -12456,6 +12424,31 @@
                     "hp": 81
                 }
             },
+            "Wallbreaker": {
+                "abilities": [
+                    "Water Absorb"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Ice",
+                    "Water"
+                ],
+                "moves": [
+                    "Freeze-Dry",
+                    "Hydro Pump",
+                    "Ice Beam",
+                    "Sparkling Aria"
+                ],
+                "evs": {
+                    "hp": 81,
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Water Absorb"
@@ -12477,31 +12470,6 @@
                     "Sparkling Aria"
                 ],
                 "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Water Absorb"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Ice",
-                    "Water"
-                ],
-                "moves": [
-                    "Freeze-Dry",
-                    "Hydro Pump",
-                    "Ice Beam",
-                    "Sparkling Aria"
-                ],
-                "evs": {
-                    "hp": 81,
                     "atk": 0
                 },
                 "ivs": {
@@ -12560,7 +12528,7 @@
             "Soul Dew"
         ],
         "roles": {
-            "Bulky Setup": {
+            "Bulky Attacker": {
                 "abilities": [
                     "Levitate"
                 ],
@@ -12568,12 +12536,14 @@
                     "Soul Dew"
                 ],
                 "teraTypes": [
+                    "Dragon",
+                    "Fighting",
                     "Steel"
                 ],
                 "moves": [
-                    "Calm Mind",
+                    "Aura Sphere",
                     "Draco Meteor",
-                    "Psyshock",
+                    "Luster Purge",
                     "Recover"
                 ],
                 "evs": {
@@ -12602,7 +12572,7 @@
                     "Luster Purge"
                 ]
             },
-            "Bulky Attacker": {
+            "Bulky Setup": {
                 "abilities": [
                     "Levitate"
                 ],
@@ -12610,14 +12580,12 @@
                     "Soul Dew"
                 ],
                 "teraTypes": [
-                    "Dragon",
-                    "Fighting",
                     "Steel"
                 ],
                 "moves": [
-                    "Aura Sphere",
+                    "Calm Mind",
                     "Draco Meteor",
-                    "Luster Purge",
+                    "Psyshock",
                     "Recover"
                 ],
                 "evs": {
@@ -12941,30 +12909,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Fast Attacker": {
-                "abilities": [
-                    "Swift Swim"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Grass",
-                    "Water"
-                ],
-                "moves": [
-                    "Giga Drain",
-                    "Hydro Pump",
-                    "Ice Beam",
-                    "Leaf Storm"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Swift Swim"
@@ -12982,6 +12926,30 @@
                     "Hydro Pump",
                     "Ice Beam",
                     "Rain Dance"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Swift Swim"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Grass",
+                    "Water"
+                ],
+                "moves": [
+                    "Giga Drain",
+                    "Hydro Pump",
+                    "Ice Beam",
+                    "Leaf Storm"
                 ],
                 "evs": {
                     "atk": 0
@@ -13072,6 +13040,26 @@
             "Life Orb"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Storm Drain"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Fire",
+                    "Ground",
+                    "Steel"
+                ],
+                "moves": [
+                    "Encore",
+                    "Hydro Pump",
+                    "Ice Beam",
+                    "U-turn"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Storm Drain"
@@ -13095,26 +13083,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Storm Drain"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Fire",
-                    "Ground",
-                    "Steel"
-                ],
-                "moves": [
-                    "Encore",
-                    "Hydro Pump",
-                    "Ice Beam",
-                    "U-turn"
-                ]
             }
         }
     },
@@ -13127,6 +13095,30 @@
             "Leftovers"
         ],
         "roles": {
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Shadow Shield"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fairy"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Moongeist Beam",
+                    "Moonlight",
+                    "Psyshock"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Setup": {
                 "abilities": [
                     "Shadow Shield"
@@ -13144,30 +13136,6 @@
                     "Moonblast",
                     "Moongeist Beam",
                     "Moonlight"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Shadow Shield"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fairy"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Moongeist Beam",
-                    "Moonlight",
-                    "Psyshock"
                 ],
                 "evs": {
                     "atk": 0
@@ -13194,24 +13162,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Attacker": {
-                "abilities": [
-                    "Contrary"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Defog",
-                    "Knock Off",
-                    "Leaf Storm",
-                    "Superpower",
-                    "Synthesis"
-                ]
-            },
             "AV Pivot": {
                 "abilities": [
                     "Contrary"
@@ -13229,6 +13179,24 @@
                     "Leaf Storm",
                     "Leech Life",
                     "Superpower"
+                ]
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Contrary"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Defog",
+                    "Knock Off",
+                    "Leaf Storm",
+                    "Superpower",
+                    "Synthesis"
                 ]
             }
         }
@@ -13280,25 +13248,6 @@
             "Flame Orb"
         ],
         "roles": {
-            "AV Pivot": {
-                "abilities": [
-                    "Intimidate"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Fairy"
-                ],
-                "moves": [
-                    "Ice Fang",
-                    "Play Rough",
-                    "Throat Chop",
-                    "Volt Switch",
-                    "Wild Charge"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Guts"
@@ -13319,6 +13268,25 @@
                 "evs": {
                     "hp": 81
                 }
+            },
+            "AV Pivot": {
+                "abilities": [
+                    "Intimidate"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Fairy"
+                ],
+                "moves": [
+                    "Ice Fang",
+                    "Play Rough",
+                    "Throat Chop",
+                    "Volt Switch",
+                    "Wild Charge"
+                ]
             }
         }
     },
@@ -13366,24 +13334,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Wallbreaker": {
-                "abilities": [
-                    "Tough Claws"
-                ],
-                "items": [
-                    "Choice Band"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Accelerock",
-                    "Close Combat",
-                    "Psychic Fangs",
-                    "Stone Edge",
-                    "Throat Chop"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Tough Claws"
@@ -13400,6 +13350,24 @@
                     "Psychic Fangs",
                     "Stone Edge",
                     "Swords Dance"
+                ]
+            },
+            "Wallbreaker": {
+                "abilities": [
+                    "Tough Claws"
+                ],
+                "items": [
+                    "Choice Band"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Accelerock",
+                    "Close Combat",
+                    "Psychic Fangs",
+                    "Stone Edge",
+                    "Throat Chop"
                 ]
             }
         }
@@ -13690,6 +13658,31 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Analytic",
+                    "Magnet Pull"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Discharge",
+                    "Flash Cannon",
+                    "Iron Defense",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Analytic",
@@ -13708,31 +13701,6 @@
                     "Flash Cannon",
                     "Thunderbolt",
                     "Volt Switch"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Analytic",
-                    "Magnet Pull"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Discharge",
-                    "Flash Cannon",
-                    "Iron Defense",
-                    "Thunderbolt"
                 ],
                 "evs": {
                     "atk": 0
@@ -13908,6 +13876,24 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
+            "Bulky Support": {
+                "abilities": [
+                    "Overcoat"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Defog",
+                    "Foul Play",
+                    "Roost",
+                    "Toxic",
+                    "U-turn"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Overcoat"
@@ -13926,24 +13912,6 @@
                     "Roost",
                     "Toxic"
                 ]
-            },
-            "Bulky Support": {
-                "abilities": [
-                    "Overcoat"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Defog",
-                    "Foul Play",
-                    "Roost",
-                    "Toxic",
-                    "U-turn"
-                ]
             }
         }
     },
@@ -13956,6 +13924,27 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Intimidate"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Ground",
+                    "Steel",
+                    "Water"
+                ],
+                "moves": [
+                    "Bug Buzz",
+                    "Hurricane",
+                    "Hydro Pump",
+                    "Sticky Web",
+                    "Stun Spore",
+                    "U-turn"
+                ]
+            },
             "Setup Sweeper": {
                 "abilities": [
                     "Intimidate"
@@ -13978,27 +13967,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Intimidate"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Ground",
-                    "Steel",
-                    "Water"
-                ],
-                "moves": [
-                    "Bug Buzz",
-                    "Hurricane",
-                    "Hydro Pump",
-                    "Sticky Web",
-                    "Stun Spore",
-                    "U-turn"
-                ]
             }
         }
     },
@@ -14385,6 +14353,24 @@
             "Weakness Policy"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Clear Body"
+                ],
+                "items": [
+                    "Weakness Policy"
+                ],
+                "teraTypes": [
+                    "Ground"
+                ],
+                "moves": [
+                    "Agility",
+                    "Earthquake",
+                    "Heavy Slam",
+                    "Knock Off",
+                    "Psychic Fangs"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Clear Body"
@@ -14405,24 +14391,6 @@
                     "Psychic Fangs",
                     "Stealth Rock"
                 ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Clear Body"
-                ],
-                "items": [
-                    "Weakness Policy"
-                ],
-                "teraTypes": [
-                    "Ground"
-                ],
-                "moves": [
-                    "Agility",
-                    "Earthquake",
-                    "Heavy Slam",
-                    "Knock Off",
-                    "Psychic Fangs"
-                ]
             }
         }
     },
@@ -14436,47 +14404,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Synchronize"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fairy",
-                    "Steel"
-                ],
-                "moves": [
-                    "Encore",
-                    "Knock Off",
-                    "Psychic",
-                    "Psychic Noise",
-                    "Stealth Rock",
-                    "Toxic Spikes",
-                    "U-turn",
-                    "Will-O-Wisp"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Synchronize"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Knock Off",
-                    "Leech Life",
-                    "Psychic Fangs",
-                    "Swords Dance"
-                ]
-            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Synchronize"
@@ -14509,6 +14436,47 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Synchronize"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Knock Off",
+                    "Leech Life",
+                    "Psychic Fangs",
+                    "Swords Dance"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Synchronize"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fairy",
+                    "Steel"
+                ],
+                "moves": [
+                    "Encore",
+                    "Knock Off",
+                    "Psychic",
+                    "Psychic Noise",
+                    "Stealth Rock",
+                    "Toxic Spikes",
+                    "U-turn",
+                    "Will-O-Wisp"
+                ]
             }
         }
     },
@@ -14571,6 +14539,27 @@
             "Life Orb"
         ],
         "roles": {
+            "Wallbreaker": {
+                "abilities": [
+                    "Reckless"
+                ],
+                "items": [
+                    "Choice Band"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "High Jump Kick",
+                    "Knock Off",
+                    "Poison Jab",
+                    "Stone Edge",
+                    "U-turn"
+                ],
+                "evs": {
+                    "hp": 81
+                }
+            },
             "AV Pivot": {
                 "abilities": [
                     "Regenerator"
@@ -14608,27 +14597,6 @@
                     "Swords Dance",
                     "Triple Axel"
                 ]
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Reckless"
-                ],
-                "items": [
-                    "Choice Band"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "High Jump Kick",
-                    "Knock Off",
-                    "Poison Jab",
-                    "Stone Edge",
-                    "U-turn"
-                ],
-                "evs": {
-                    "hp": 81
-                }
             }
         }
     },
@@ -14643,6 +14611,26 @@
             "Leftovers"
         ],
         "roles": {
+            "AV Pivot": {
+                "abilities": [
+                    "Intimidate"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Poison"
+                ],
+                "moves": [
+                    "Crunch",
+                    "Play Rough",
+                    "Poison Fang",
+                    "Sucker Punch",
+                    "Super Fang",
+                    "Throat Chop"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Intimidate"
@@ -14661,26 +14649,6 @@
                     "Poison Fang",
                     "Sucker Punch",
                     "Taunt",
-                    "Throat Chop"
-                ]
-            },
-            "AV Pivot": {
-                "abilities": [
-                    "Intimidate"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Poison"
-                ],
-                "moves": [
-                    "Crunch",
-                    "Play Rough",
-                    "Poison Fang",
-                    "Sucker Punch",
-                    "Super Fang",
                     "Throat Chop"
                 ]
             }
@@ -14952,6 +14920,33 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Leftovers",
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Fairy"
+                ],
+                "moves": [
+                    "Dazzling Gleam",
+                    "Mystical Fire",
+                    "Nasty Plot",
+                    "Shadow Ball",
+                    "Substitute",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Wallbreaker": {
                 "abilities": [
                     "Levitate"
@@ -14972,33 +14967,6 @@
                     "Shadow Ball",
                     "Thunderbolt",
                     "Trick"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Levitate"
-                ],
-                "items": [
-                    "Leftovers",
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Fairy"
-                ],
-                "moves": [
-                    "Dazzling Gleam",
-                    "Mystical Fire",
-                    "Nasty Plot",
-                    "Shadow Ball",
-                    "Substitute",
-                    "Thunderbolt"
                 ],
                 "evs": {
                     "atk": 0
@@ -15126,23 +15094,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Fast Support": {
-                "abilities": [
-                    "Hunger Switch"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Electric"
-                ],
-                "moves": [
-                    "Aura Wheel",
-                    "Parting Shot",
-                    "Protect",
-                    "Rapid Spin"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Hunger Switch"
@@ -15156,6 +15107,23 @@
                 "moves": [
                     "Aura Wheel",
                     "Knock Off",
+                    "Protect",
+                    "Rapid Spin"
+                ]
+            },
+            "Fast Support": {
+                "abilities": [
+                    "Hunger Switch"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "moves": [
+                    "Aura Wheel",
+                    "Parting Shot",
                     "Protect",
                     "Rapid Spin"
                 ]
@@ -15286,23 +15254,6 @@
             "Life Orb"
         ],
         "roles": {
-            "AV Pivot": {
-                "abilities": [
-                    "Toxic Chain"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Dark"
-                ],
-                "moves": [
-                    "Fake Out",
-                    "Psychic Noise",
-                    "Sludge Wave",
-                    "U-turn"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Toxic Chain"
@@ -15319,6 +15270,24 @@
                     "Focus Blast",
                     "Nasty Plot",
                     "Psyshock",
+                    "Sludge Wave",
+                    "U-turn"
+                ]
+            },
+            "AV Pivot": {
+                "abilities": [
+                    "Toxic Chain"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "moves": [
+                    "Fake Out",
+                    "Focus Blast",
+                    "Psychic Noise",
                     "Sludge Wave",
                     "U-turn"
                 ]
@@ -15393,6 +15362,23 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Prism Armor"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Brick Break",
+                    "Dragon Dance",
+                    "Moongeist Beam",
+                    "Photon Geyser"
+                ]
+            },
             "Bulky Setup": {
                 "abilities": [
                     "Prism Armor"
@@ -15416,23 +15402,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Prism Armor"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Brick Break",
-                    "Dragon Dance",
-                    "Moongeist Beam",
-                    "Photon Geyser"
-                ]
             }
         }
     },
@@ -15684,6 +15653,23 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Defiant"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "moves": [
+                    "Ivy Cudgel",
+                    "Knock Off",
+                    "Superpower",
+                    "Swords Dance"
+                ]
+            },
             "Fast Support": {
                 "abilities": [
                     "Defiant"
@@ -15706,23 +15692,6 @@
                     "Synthesis",
                     "U-turn"
                 ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Defiant"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Grass"
-                ],
-                "moves": [
-                    "Ivy Cudgel",
-                    "Knock Off",
-                    "Superpower",
-                    "Swords Dance"
-                ]
             }
         }
     },
@@ -15735,6 +15704,24 @@
             "Cornerstone Mask"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Sturdy"
+                ],
+                "items": [
+                    "Cornerstone Mask"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "moves": [
+                    "Horn Leech",
+                    "Ivy Cudgel",
+                    "Power Whip",
+                    "Superpower",
+                    "Swords Dance"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Sturdy"
@@ -15752,24 +15739,6 @@
                     "Spikes",
                     "Superpower",
                     "Synthesis"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Sturdy"
-                ],
-                "items": [
-                    "Cornerstone Mask"
-                ],
-                "teraTypes": [
-                    "Rock"
-                ],
-                "moves": [
-                    "Horn Leech",
-                    "Ivy Cudgel",
-                    "Power Whip",
-                    "Superpower",
-                    "Swords Dance"
                 ]
             }
         }
@@ -15820,25 +15789,6 @@
             "Wellspring Mask"
         ],
         "roles": {
-            "Bulky Attacker": {
-                "abilities": [
-                    "Water Absorb"
-                ],
-                "items": [
-                    "Wellspring Mask"
-                ],
-                "teraTypes": [
-                    "Water"
-                ],
-                "moves": [
-                    "Encore",
-                    "Ivy Cudgel",
-                    "Spikes",
-                    "Synthesis",
-                    "U-turn",
-                    "Wood Hammer"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Water Absorb"
@@ -15856,6 +15806,25 @@
                     "Play Rough",
                     "Power Whip",
                     "Swords Dance"
+                ]
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Water Absorb"
+                ],
+                "items": [
+                    "Wellspring Mask"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "moves": [
+                    "Encore",
+                    "Ivy Cudgel",
+                    "Spikes",
+                    "Synthesis",
+                    "U-turn",
+                    "Wood Hammer"
                 ]
             }
         }
@@ -15899,24 +15868,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Thick Fat"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Ground"
-                ],
-                "moves": [
-                    "Body Slam",
-                    "Curse",
-                    "Double-Edge",
-                    "High Horsepower",
-                    "Lash Out"
-                ]
-            },
             "Bulky Support": {
                 "abilities": [
                     "Aroma Veil",
@@ -15935,6 +15886,24 @@
                     "Rest",
                     "Sleep Talk"
                 ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Thick Fat"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Ground"
+                ],
+                "moves": [
+                    "Body Slam",
+                    "Curse",
+                    "Double-Edge",
+                    "High Horsepower",
+                    "Lash Out"
+                ]
             }
         }
     },
@@ -15948,6 +15917,23 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Toxic Chain"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "moves": [
+                    "Bulk Up",
+                    "Drain Punch",
+                    "Gunk Shot",
+                    "Knock Off"
+                ]
+            },
             "AV Pivot": {
                 "abilities": [
                     "Toxic Chain"
@@ -15964,23 +15950,6 @@
                     "High Horsepower",
                     "Knock Off",
                     "Psychic Fangs"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Toxic Chain"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark"
-                ],
-                "moves": [
-                    "Bulk Up",
-                    "Drain Punch",
-                    "Gunk Shot",
-                    "Knock Off"
                 ]
             }
         }
@@ -16857,6 +16826,30 @@
             "Life Orb"
         ],
         "roles": {
+            "Tera Blast user": {
+                "abilities": [
+                    "Fur Coat"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Poison"
+                ],
+                "moves": [
+                    "Dark Pulse",
+                    "Nasty Plot",
+                    "Tera Blast",
+                    "Thunderbolt"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Fur Coat"
@@ -16901,30 +16894,6 @@
                     "Taunt",
                     "Thunder Wave"
                 ]
-            },
-            "Tera Blast user": {
-                "abilities": [
-                    "Fur Coat"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Poison"
-                ],
-                "moves": [
-                    "Dark Pulse",
-                    "Nasty Plot",
-                    "Tera Blast",
-                    "Thunderbolt"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
             }
         }
     },
@@ -17062,24 +17031,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Electric Surge"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Grass",
-                    "Water"
-                ],
-                "moves": [
-                    "Curse",
-                    "Liquidation",
-                    "Recover",
-                    "Zing Zap"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Electric Surge"
@@ -17104,6 +17055,24 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Electric Surge"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Grass",
+                    "Water"
+                ],
+                "moves": [
+                    "Curse",
+                    "Liquidation",
+                    "Recover",
+                    "Zing Zap"
+                ]
             }
         }
     },
@@ -17251,25 +17220,6 @@
                     "Liquidation"
                 ]
             },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Swift Swim"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fighting",
-                    "Water"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Knock Off",
-                    "Liquidation",
-                    "Rain Dance"
-                ]
-            },
             "Bulky Setup": {
                 "abilities": [
                     "Water Absorb"
@@ -17289,6 +17239,25 @@
                     "Knock Off",
                     "Liquidation",
                     "Poison Jab"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Swift Swim"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fighting",
+                    "Water"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Knock Off",
+                    "Liquidation",
+                    "Rain Dance"
                 ]
             }
         }
@@ -17692,6 +17661,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Moxie"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Aqua Step",
+                    "Close Combat",
+                    "Rapid Spin",
+                    "Roost",
+                    "Swords Dance"
+                ]
+            },
             "Wallbreaker": {
                 "abilities": [
                     "Moxie"
@@ -17730,24 +17717,6 @@
                     "Knock Off",
                     "Swords Dance",
                     "Triple Axel"
-                ]
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Moxie"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Aqua Step",
-                    "Close Combat",
-                    "Rapid Spin",
-                    "Roost",
-                    "Swords Dance"
                 ]
             }
         }
@@ -18151,30 +18120,6 @@
                     "atk": 0
                 }
             },
-            "Bulky Setup": {
-                "abilities": [
-                    "Pressure"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Grass",
-                    "Water"
-                ],
-                "moves": [
-                    "Calm Mind",
-                    "Scald",
-                    "Substitute",
-                    "Thunderbolt"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Pressure"
@@ -18193,6 +18138,30 @@
                     "Shadow Ball",
                     "Thunderbolt",
                     "Volt Switch"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Pressure"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Grass",
+                    "Water"
+                ],
+                "moves": [
+                    "Calm Mind",
+                    "Scald",
+                    "Substitute",
+                    "Thunderbolt"
                 ],
                 "evs": {
                     "atk": 0
@@ -18488,23 +18457,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Slow Start"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Ghost"
-                ],
-                "moves": [
-                    "Body Slam",
-                    "Knock Off",
-                    "Rest",
-                    "Sleep Talk"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Slow Start"
@@ -18521,6 +18473,23 @@
                     "Knock Off",
                     "Protect",
                     "Substitute"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Slow Start"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "moves": [
+                    "Body Slam",
+                    "Knock Off",
+                    "Rest",
+                    "Sleep Talk"
                 ]
             }
         }
@@ -18629,24 +18598,6 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Turboblaze"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Fire"
-                ],
-                "moves": [
-                    "Dragon Dance",
-                    "Flare Blitz",
-                    "Outrage",
-                    "Stone Edge"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Turboblaze"
@@ -18664,6 +18615,24 @@
                     "Dragon Tail",
                     "Earth Power",
                     "Will-O-Wisp"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Turboblaze"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Fire"
+                ],
+                "moves": [
+                    "Dragon Dance",
+                    "Flare Blitz",
+                    "Outrage",
+                    "Stone Edge"
                 ]
             }
         }
@@ -18782,6 +18751,26 @@
             "Weakness Policy"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Solid Rock"
+                ],
+                "items": [
+                    "Weakness Policy"
+                ],
+                "teraTypes": [
+                    "Bug",
+                    "Ground",
+                    "Rock"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Ice Punch",
+                    "Megahorn",
+                    "Rock Polish",
+                    "Stone Edge"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Solid Rock"
@@ -18801,26 +18790,6 @@
                     "Earthquake",
                     "Ice Punch",
                     "Megahorn",
-                    "Stone Edge"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Solid Rock"
-                ],
-                "items": [
-                    "Weakness Policy"
-                ],
-                "teraTypes": [
-                    "Bug",
-                    "Ground",
-                    "Rock"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Ice Punch",
-                    "Megahorn",
-                    "Rock Polish",
                     "Stone Edge"
                 ]
             }
@@ -18941,29 +18910,6 @@
             "Lum Berry"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Protosynthesis"
-                ],
-                "items": [
-                    "Lum Berry"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Dragon",
-                    "Ground",
-                    "Poison",
-                    "Steel"
-                ],
-                "moves": [
-                    "Dragon Dance",
-                    "Earthquake",
-                    "Iron Head",
-                    "Knock Off",
-                    "Outrage",
-                    "Roost"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Protosynthesis"
@@ -18981,6 +18927,30 @@
                     "Knock Off",
                     "Outrage",
                     "U-turn"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Protosynthesis"
+                ],
+                "items": [
+                    "Lum Berry"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Dragon",
+                    "Fairy",
+                    "Ground",
+                    "Poison",
+                    "Steel"
+                ],
+                "moves": [
+                    "Dragon Dance",
+                    "Earthquake",
+                    "Iron Head",
+                    "Knock Off",
+                    "Outrage",
+                    "Roost"
                 ]
             },
             "Fast Bulky Setup": {
@@ -19142,31 +19112,6 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Levitate"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Steel"
-                ],
-                "moves": [
-                    "Discharge",
-                    "Overheat",
-                    "Pain Split",
-                    "Volt Switch",
-                    "Will-O-Wisp"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Levitate"
@@ -19184,6 +19129,31 @@
                     "Overheat",
                     "Pain Split",
                     "Thunderbolt",
+                    "Volt Switch",
+                    "Will-O-Wisp"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Steel"
+                ],
+                "moves": [
+                    "Discharge",
+                    "Overheat",
+                    "Pain Split",
                     "Volt Switch",
                     "Will-O-Wisp"
                 ],
@@ -19257,6 +19227,31 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Support": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Electric",
+                    "Steel"
+                ],
+                "moves": [
+                    "Discharge",
+                    "Hydro Pump",
+                    "Pain Split",
+                    "Volt Switch",
+                    "Will-O-Wisp"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Levitate"
@@ -19275,31 +19270,6 @@
                     "Pain Split",
                     "Thunderbolt",
                     "Trick",
-                    "Volt Switch",
-                    "Will-O-Wisp"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Bulky Support": {
-                "abilities": [
-                    "Levitate"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Electric",
-                    "Steel"
-                ],
-                "moves": [
-                    "Discharge",
-                    "Hydro Pump",
-                    "Pain Split",
                     "Volt Switch",
                     "Will-O-Wisp"
                 ],
@@ -19547,6 +19517,23 @@
             "Loaded Dice"
         ],
         "roles": {
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Shed Skin"
+                ],
+                "items": [
+                    "Loaded Dice"
+                ],
+                "teraTypes": [
+                    "Dragon"
+                ],
+                "moves": [
+                    "Coil",
+                    "Earthquake",
+                    "Rock Blast",
+                    "Scale Shot"
+                ]
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Shed Skin"
@@ -19564,23 +19551,6 @@
                     "Rest",
                     "Stealth Rock",
                     "Stone Edge"
-                ]
-            },
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Shed Skin"
-                ],
-                "items": [
-                    "Loaded Dice"
-                ],
-                "teraTypes": [
-                    "Dragon"
-                ],
-                "moves": [
-                    "Coil",
-                    "Earthquake",
-                    "Rock Blast",
-                    "Scale Shot"
                 ]
             },
             "Bulky Setup": {
@@ -19752,23 +19722,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Fast Attacker": {
-                "abilities": [
-                    "Serene Grace"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Normal"
-                ],
-                "moves": [
-                    "Headbutt",
-                    "High Horsepower",
-                    "Horn Leech",
-                    "Swords Dance"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Sap Sipper"
@@ -19786,6 +19739,23 @@
                     "Horn Leech",
                     "Swords Dance"
                 ]
+            },
+            "Fast Attacker": {
+                "abilities": [
+                    "Serene Grace"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "moves": [
+                    "Headbutt",
+                    "High Horsepower",
+                    "Horn Leech",
+                    "Swords Dance"
+                ]
             }
         }
     },
@@ -19799,23 +19769,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Overgrow"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Rock"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Leaf Blade",
-                    "Rock Slide",
-                    "Swords Dance"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Overgrow"
@@ -19835,6 +19788,23 @@
                     "Leaf Storm",
                     "Rock Slide",
                     "Shed Tail"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Overgrow"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Leaf Blade",
+                    "Rock Slide",
+                    "Swords Dance"
                 ]
             },
             "Fast Support": {
@@ -19873,6 +19843,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Technician"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Bug Bite",
+                    "Bullet Punch",
+                    "Close Combat",
+                    "Knock Off",
+                    "Swords Dance"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Technician"
@@ -19909,24 +19897,6 @@
                     "Knock Off",
                     "U-turn"
                 ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Technician"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Bug Bite",
-                    "Bullet Punch",
-                    "Close Combat",
-                    "Knock Off",
-                    "Swords Dance"
-                ]
             }
         }
     },
@@ -19942,6 +19912,29 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Chlorophyll"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "moves": [
+                    "Flamethrower",
+                    "Leech Seed",
+                    "Protect",
+                    "Substitute"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Wallbreaker": {
                 "abilities": [
                     "Chlorophyll"
@@ -19977,29 +19970,6 @@
                     "Flamethrower",
                     "Leaf Storm",
                     "Overheat"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Chlorophyll"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Steel"
-                ],
-                "moves": [
-                    "Flamethrower",
-                    "Leech Seed",
-                    "Protect",
-                    "Substitute"
                 ],
                 "evs": {
                     "atk": 0
@@ -20065,25 +20035,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Protosynthesis"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Poison",
-                    "Steel"
-                ],
-                "moves": [
-                    "Encore",
-                    "Play Rough",
-                    "Protect",
-                    "Thunder Wave",
-                    "Wish"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Protosynthesis"
@@ -20108,6 +20059,25 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Protosynthesis"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Poison",
+                    "Steel"
+                ],
+                "moves": [
+                    "Encore",
+                    "Play Rough",
+                    "Protect",
+                    "Thunder Wave",
+                    "Wish"
+                ]
             }
         }
     },
@@ -20352,30 +20322,6 @@
             "Leftovers"
         ],
         "roles": {
-            "Bulky Attacker": {
-                "abilities": [
-                    "Serene Grace"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Steel",
-                    "Water"
-                ],
-                "moves": [
-                    "Air Slash",
-                    "Earth Power",
-                    "Seed Flare",
-                    "Synthesis"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Serene Grace"
@@ -20393,6 +20339,30 @@
                     "Dazzling Gleam",
                     "Earth Power",
                     "Seed Flare"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
+            "Bulky Attacker": {
+                "abilities": [
+                    "Serene Grace"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Steel",
+                    "Water"
+                ],
+                "moves": [
+                    "Air Slash",
+                    "Earth Power",
+                    "Seed Flare",
+                    "Synthesis"
                 ],
                 "evs": {
                     "atk": 0
@@ -20570,23 +20540,6 @@
                     "Stealth Rock"
                 ]
             },
-            "Bulky Setup": {
-                "abilities": [
-                    "Sturdy"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Brave Bird",
-                    "Iron Defense",
-                    "Roost"
-                ]
-            },
             "Bulky Support": {
                 "abilities": [
                     "Sturdy"
@@ -20605,6 +20558,23 @@
                     "Stealth Rock",
                     "Whirlwind"
                 ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Sturdy"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Brave Bird",
+                    "Iron Defense",
+                    "Roost"
+                ]
             }
         }
     },
@@ -20617,6 +20587,24 @@
             "Heavy-Duty Boots"
         ],
         "roles": {
+            "Bulky Attacker": {
+                "abilities": [
+                    "Unaware"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Water"
+                ],
+                "moves": [
+                    "Flame Charge",
+                    "Shadow Ball",
+                    "Slack Off",
+                    "Torch Song"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Unaware"
@@ -20640,24 +20628,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Bulky Attacker": {
-                "abilities": [
-                    "Unaware"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Water"
-                ],
-                "moves": [
-                    "Flame Charge",
-                    "Shadow Ball",
-                    "Slack Off",
-                    "Torch Song"
-                ]
             }
         }
     },
@@ -20708,24 +20678,6 @@
             "Choice Scarf"
         ],
         "roles": {
-            "Wallbreaker": {
-                "abilities": [
-                    "Truant"
-                ],
-                "items": [
-                    "Choice Band"
-                ],
-                "teraTypes": [
-                    "Ghost",
-                    "Ground"
-                ],
-                "moves": [
-                    "Double-Edge",
-                    "Earthquake",
-                    "Giga Impact",
-                    "Knock Off"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Truant"
@@ -20736,6 +20688,24 @@
                 ],
                 "teraTypes": [
                     "Normal"
+                ],
+                "moves": [
+                    "Double-Edge",
+                    "Earthquake",
+                    "Giga Impact",
+                    "Knock Off"
+                ]
+            },
+            "Wallbreaker": {
+                "abilities": [
+                    "Truant"
+                ],
+                "items": [
+                    "Choice Band"
+                ],
+                "teraTypes": [
+                    "Ghost",
+                    "Ground"
                 ],
                 "moves": [
                     "Double-Edge",
@@ -20835,6 +20805,32 @@
             "Rocky Helmet"
         ],
         "roles": {
+            "AV Pivot": {
+                "abilities": [
+                    "Regenerator"
+                ],
+                "items": [
+                    "Assault Vest"
+                ],
+                "teraTypes": [
+                    "Fairy",
+                    "Fighting"
+                ],
+                "moves": [
+                    "Body Press",
+                    "Fire Blast",
+                    "Future Sight",
+                    "Ice Beam",
+                    "Psychic Noise",
+                    "Scald"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Regenerator"
@@ -20854,32 +20850,6 @@
                     "Scald",
                     "Slack Off",
                     "Thunder Wave"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "AV Pivot": {
-                "abilities": [
-                    "Regenerator"
-                ],
-                "items": [
-                    "Assault Vest"
-                ],
-                "teraTypes": [
-                    "Fairy",
-                    "Fighting"
-                ],
-                "moves": [
-                    "Body Press",
-                    "Fire Blast",
-                    "Future Sight",
-                    "Ice Beam",
-                    "Psychic Noise",
-                    "Scald"
                 ],
                 "evs": {
                     "atk": 0
@@ -20931,30 +20901,6 @@
             "Rocky Helmet"
         ],
         "roles": {
-            "Wallbreaker": {
-                "abilities": [
-                    "Regenerator"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Poison",
-                    "Psychic"
-                ],
-                "moves": [
-                    "Fire Blast",
-                    "Psychic",
-                    "Shell Side Arm",
-                    "Trick Room"
-                ],
-                "evs": {
-                    "spe": 0
-                },
-                "ivs": {
-                    "spe": 0
-                }
-            },
             "AV Pivot": {
                 "abilities": [
                     "Regenerator"
@@ -20999,6 +20945,30 @@
                     "Slack Off",
                     "Thunder Wave"
                 ]
+            },
+            "Wallbreaker": {
+                "abilities": [
+                    "Regenerator"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Poison",
+                    "Psychic"
+                ],
+                "moves": [
+                    "Fire Blast",
+                    "Psychic",
+                    "Shell Side Arm",
+                    "Trick Room"
+                ],
+                "evs": {
+                    "spe": 0
+                },
+                "ivs": {
+                    "spe": 0
+                }
             }
         }
     },
@@ -21012,6 +20982,30 @@
             "Leftovers"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Regenerator"
+                ],
+                "items": [
+                    "Heavy-Duty Boots"
+                ],
+                "teraTypes": [
+                    "Dragon",
+                    "Fairy"
+                ],
+                "moves": [
+                    "Chilly Reception",
+                    "Future Sight",
+                    "Scald",
+                    "Slack Off"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Attacker": {
                 "abilities": [
                     "Regenerator"
@@ -21031,30 +21025,6 @@
                     "Scald",
                     "Slack Off",
                     "Thunder Wave"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Regenerator"
-                ],
-                "items": [
-                    "Heavy-Duty Boots"
-                ],
-                "teraTypes": [
-                    "Dragon",
-                    "Fairy"
-                ],
-                "moves": [
-                    "Chilly Reception",
-                    "Future Sight",
-                    "Scald",
-                    "Slack Off"
                 ],
                 "evs": {
                     "atk": 0
@@ -21205,24 +21175,6 @@
             "White Herb"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Unburden"
-                ],
-                "items": [
-                    "White Herb"
-                ],
-                "teraTypes": [
-                    "Flying"
-                ],
-                "moves": [
-                    "Acrobatics",
-                    "Close Combat",
-                    "Dire Claw",
-                    "Gunk Shot",
-                    "Swords Dance"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Poison Touch"
@@ -21239,6 +21191,23 @@
                     "Dire Claw",
                     "Throat Chop",
                     "U-turn"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Unburden"
+                ],
+                "items": [
+                    "White Herb"
+                ],
+                "teraTypes": [
+                    "Flying"
+                ],
+                "moves": [
+                    "Acrobatics",
+                    "Close Combat",
+                    "Dire Claw",
+                    "Swords Dance"
                 ]
             }
         }
@@ -21919,6 +21888,24 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Liquid Ooze"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Ground"
+                ],
+                "moves": [
+                    "Earthquake",
+                    "Gunk Shot",
+                    "Knock Off",
+                    "Swords Dance"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Liquid Ooze"
@@ -21957,24 +21944,6 @@
                     "Sludge Bomb",
                     "Thunder Wave",
                     "Toxic Spikes"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Liquid Ooze"
-                ],
-                "items": [
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Ground"
-                ],
-                "moves": [
-                    "Earthquake",
-                    "Gunk Shot",
-                    "Knock Off",
-                    "Swords Dance"
                 ]
             }
         }
@@ -22227,27 +22196,6 @@
             "Sitrus Berry"
         ],
         "roles": {
-            "Fast Bulky Setup": {
-                "abilities": [
-                    "Cud Chew"
-                ],
-                "items": [
-                    "Sitrus Berry"
-                ],
-                "teraTypes": [
-                    "Steel",
-                    "Water"
-                ],
-                "moves": [
-                    "Bulk Up",
-                    "Close Combat",
-                    "Liquidation",
-                    "Substitute"
-                ],
-                "evs": {
-                    "hp": 73
-                }
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Intimidate"
@@ -22281,6 +22229,27 @@
                     "Close Combat",
                     "Liquidation"
                 ]
+            },
+            "Fast Bulky Setup": {
+                "abilities": [
+                    "Cud Chew"
+                ],
+                "items": [
+                    "Sitrus Berry"
+                ],
+                "teraTypes": [
+                    "Steel",
+                    "Water"
+                ],
+                "moves": [
+                    "Bulk Up",
+                    "Close Combat",
+                    "Liquidation",
+                    "Substitute"
+                ],
+                "evs": {
+                    "hp": 73
+                }
             }
         }
     },
@@ -22463,24 +22432,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Justified"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Fighting",
-                    "Ground"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Earthquake",
-                    "Stone Edge",
-                    "Swords Dance"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Justified"
@@ -22497,6 +22448,24 @@
                     "Earthquake",
                     "Quick Attack",
                     "Stone Edge"
+                ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Justified"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Fighting",
+                    "Ground"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Earthquake",
+                    "Stone Edge",
+                    "Swords Dance"
                 ]
             }
         }
@@ -23032,26 +23001,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Setup Sweeper": {
-                "abilities": [
-                    "Dry Skin"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fighting",
-                    "Ground"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Earthquake",
-                    "Gunk Shot",
-                    "Sucker Punch",
-                    "Swords Dance"
-                ]
-            },
             "Fast Attacker": {
                 "abilities": [
                     "Dry Skin"
@@ -23072,6 +23021,26 @@
                     "Sucker Punch",
                     "Swords Dance"
                 ]
+            },
+            "Setup Sweeper": {
+                "abilities": [
+                    "Dry Skin"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fighting",
+                    "Ground"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Earthquake",
+                    "Gunk Shot",
+                    "Sucker Punch",
+                    "Swords Dance"
+                ]
             }
         }
     },
@@ -23086,6 +23055,23 @@
             "Throat Spray"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Punk Rock"
+                ],
+                "items": [
+                    "Throat Spray"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "moves": [
+                    "Boomburst",
+                    "Gunk Shot",
+                    "Overdrive",
+                    "Shift Gear"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Punk Rock"
@@ -23109,23 +23095,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Punk Rock"
-                ],
-                "items": [
-                    "Throat Spray"
-                ],
-                "teraTypes": [
-                    "Normal"
-                ],
-                "moves": [
-                    "Boomburst",
-                    "Gunk Shot",
-                    "Overdrive",
-                    "Shift Gear"
-                ]
             }
         }
     },
@@ -23141,26 +23110,6 @@
             "Sitrus Berry"
         ],
         "roles": {
-            "Bulky Support": {
-                "abilities": [
-                    "Harvest"
-                ],
-                "items": [
-                    "Sitrus Berry"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fairy",
-                    "Fighting",
-                    "Steel"
-                ],
-                "moves": [
-                    "Drain Punch",
-                    "Poltergeist",
-                    "Protect",
-                    "Toxic"
-                ]
-            },
             "Wallbreaker": {
                 "abilities": [
                     "Natural Cure"
@@ -23179,6 +23128,26 @@
                     "Rest",
                     "Will-O-Wisp",
                     "Wood Hammer"
+                ]
+            },
+            "Bulky Support": {
+                "abilities": [
+                    "Harvest"
+                ],
+                "items": [
+                    "Sitrus Berry"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fairy",
+                    "Fighting",
+                    "Steel"
+                ],
+                "moves": [
+                    "Drain Punch",
+                    "Poltergeist",
+                    "Protect",
+                    "Toxic"
                 ]
             }
         }
@@ -23333,6 +23302,30 @@
             "Leftovers"
         ],
         "roles": {
+            "Fast Attacker": {
+                "abilities": [
+                    "Blaze"
+                ],
+                "items": [
+                    "Choice Scarf",
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "moves": [
+                    "Eruption",
+                    "Fire Blast",
+                    "Focus Blast",
+                    "Shadow Ball"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Blaze"
@@ -23360,30 +23353,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Fast Attacker": {
-                "abilities": [
-                    "Blaze"
-                ],
-                "items": [
-                    "Choice Scarf",
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Fire"
-                ],
-                "moves": [
-                    "Eruption",
-                    "Fire Blast",
-                    "Focus Blast",
-                    "Shadow Ball"
-                ],
-                "evs": {
-                    "atk": 0
-                },
-                "ivs": {
-                    "atk": 0
-                }
             }
         },
         "evs": {
@@ -23404,6 +23373,25 @@
             "Weakness Policy"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Sand Stream"
+                ],
+                "items": [
+                    "Weakness Policy"
+                ],
+                "teraTypes": [
+                    "Ghost",
+                    "Rock"
+                ],
+                "moves": [
+                    "Dragon Dance",
+                    "Earthquake",
+                    "Ice Punch",
+                    "Knock Off",
+                    "Stone Edge"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Sand Stream"
@@ -23424,25 +23412,6 @@
                     "Stealth Rock",
                     "Stone Edge",
                     "Thunder Wave"
-                ]
-            },
-            "Bulky Setup": {
-                "abilities": [
-                    "Sand Stream"
-                ],
-                "items": [
-                    "Weakness Policy"
-                ],
-                "teraTypes": [
-                    "Ghost",
-                    "Rock"
-                ],
-                "moves": [
-                    "Dragon Dance",
-                    "Earthquake",
-                    "Ice Punch",
-                    "Knock Off",
-                    "Stone Edge"
                 ]
             }
         }
@@ -23714,6 +23683,31 @@
             "Leftovers"
         ],
         "roles": {
+            "Bulky Setup": {
+                "abilities": [
+                    "Levitate"
+                ],
+                "items": [
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "moves": [
+                    "Draining Kiss",
+                    "Encore",
+                    "Nasty Plot",
+                    "Psychic Noise",
+                    "Psyshock",
+                    "Substitute"
+                ],
+                "evs": {
+                    "atk": 0
+                },
+                "ivs": {
+                    "atk": 0
+                }
+            },
             "Bulky Support": {
                 "abilities": [
                     "Levitate"
@@ -23831,6 +23825,25 @@
             "Sitrus Berry"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Sharpness"
+                ],
+                "items": [
+                    "Sitrus Berry"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Psychic",
+                    "Water"
+                ],
+                "moves": [
+                    "Aqua Cutter",
+                    "Fillet Away",
+                    "Night Slash",
+                    "Psycho Cut"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Sharpness"
@@ -23847,25 +23860,6 @@
                     "Aqua Cutter",
                     "Aqua Jet",
                     "Flip Turn",
-                    "Night Slash",
-                    "Psycho Cut"
-                ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Sharpness"
-                ],
-                "items": [
-                    "Sitrus Berry"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Psychic",
-                    "Water"
-                ],
-                "moves": [
-                    "Aqua Cutter",
-                    "Fillet Away",
                     "Night Slash",
                     "Psycho Cut"
                 ]
@@ -24016,6 +24010,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Setup Sweeper": {
+                "abilities": [
+                    "Chlorophyll"
+                ],
+                "items": [
+                    "Life Orb"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Grass"
+                ],
+                "moves": [
+                    "Poison Jab",
+                    "Power Whip",
+                    "Sucker Punch",
+                    "Swords Dance"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Chlorophyll"
@@ -24052,24 +24064,6 @@
                     "Strength Sap",
                     "Sucker Punch"
                 ]
-            },
-            "Setup Sweeper": {
-                "abilities": [
-                    "Chlorophyll"
-                ],
-                "items": [
-                    "Life Orb"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Grass"
-                ],
-                "moves": [
-                    "Poison Jab",
-                    "Power Whip",
-                    "Sucker Punch",
-                    "Swords Dance"
-                ]
             }
         }
     },
@@ -24082,23 +24076,6 @@
             "Eviolite"
         ],
         "roles": {
-            "Bulky Setup": {
-                "abilities": [
-                    "Vital Spirit"
-                ],
-                "items": [
-                    "Eviolite"
-                ],
-                "teraTypes": [
-                    "Ghost"
-                ],
-                "moves": [
-                    "Body Slam",
-                    "Bulk Up",
-                    "Knock Off",
-                    "Slack Off"
-                ]
-            },
             "Bulky Attacker": {
                 "abilities": [
                     "Vital Spirit"
@@ -24113,6 +24090,23 @@
                     "Body Slam",
                     "Bulk Up",
                     "Earthquake",
+                    "Slack Off"
+                ]
+            },
+            "Bulky Setup": {
+                "abilities": [
+                    "Vital Spirit"
+                ],
+                "items": [
+                    "Eviolite"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "moves": [
+                    "Body Slam",
+                    "Bulk Up",
+                    "Knock Off",
                     "Slack Off"
                 ]
             }
@@ -24462,6 +24456,24 @@
             "Life Orb"
         ],
         "roles": {
+            "Wallbreaker": {
+                "abilities": [
+                    "Protosynthesis"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Fire",
+                    "Water"
+                ],
+                "moves": [
+                    "Draco Meteor",
+                    "Flamethrower",
+                    "Flip Turn",
+                    "Hydro Pump"
+                ]
+            },
             "Fast Attacker": {
                 "abilities": [
                     "Protosynthesis"
@@ -24484,24 +24496,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Wallbreaker": {
-                "abilities": [
-                    "Protosynthesis"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Fire",
-                    "Water"
-                ],
-                "moves": [
-                    "Draco Meteor",
-                    "Flamethrower",
-                    "Flip Turn",
-                    "Hydro Pump"
-                ]
             }
         }
     },
@@ -24608,6 +24602,26 @@
             "Leftovers"
         ],
         "roles": {
+            "Fast Support": {
+                "abilities": [
+                    "Prankster"
+                ],
+                "items": [
+                    "Heavy-Duty Boots",
+                    "Leftovers"
+                ],
+                "teraTypes": [
+                    "Poison",
+                    "Steel"
+                ],
+                "moves": [
+                    "Encore",
+                    "Giga Drain",
+                    "Moonblast",
+                    "Stun Spore",
+                    "U-turn"
+                ]
+            },
             "Bulky Support": {
                 "abilities": [
                     "Prankster"
@@ -24631,26 +24645,6 @@
                 "ivs": {
                     "atk": 0
                 }
-            },
-            "Fast Support": {
-                "abilities": [
-                    "Prankster"
-                ],
-                "items": [
-                    "Heavy-Duty Boots",
-                    "Leftovers"
-                ],
-                "teraTypes": [
-                    "Poison",
-                    "Steel"
-                ],
-                "moves": [
-                    "Encore",
-                    "Giga Drain",
-                    "Moonblast",
-                    "Stun Spore",
-                    "U-turn"
-                ]
             }
         }
     },
@@ -24960,7 +24954,6 @@
                     "Leftovers"
                 ],
                 "teraTypes": [
-                    "Fighting",
                     "Steel"
                 ],
                 "moves": [
@@ -25131,6 +25124,26 @@
             "Life Orb"
         ],
         "roles": {
+            "Fast Attacker": {
+                "abilities": [
+                    "Leaf Guard"
+                ],
+                "items": [
+                    "Choice Band",
+                    "Choice Scarf"
+                ],
+                "teraTypes": [
+                    "Dark",
+                    "Fighting",
+                    "Grass"
+                ],
+                "moves": [
+                    "Close Combat",
+                    "Knock Off",
+                    "Power Whip",
+                    "U-turn"
+                ]
+            },
             "Fast Bulky Setup": {
                 "abilities": [
                     "Leaf Guard"
@@ -25150,26 +25163,6 @@
                     "Power Whip",
                     "Swords Dance",
                     "Synthesis"
-                ]
-            },
-            "Fast Attacker": {
-                "abilities": [
-                    "Leaf Guard"
-                ],
-                "items": [
-                    "Choice Band",
-                    "Choice Scarf"
-                ],
-                "teraTypes": [
-                    "Dark",
-                    "Fighting",
-                    "Grass"
-                ],
-                "moves": [
-                    "Close Combat",
-                    "Knock Off",
-                    "Power Whip",
-                    "U-turn"
                 ]
             }
         }
@@ -25243,26 +25236,6 @@
             "Life Orb"
         ],
         "roles": {
-            "Wallbreaker": {
-                "abilities": [
-                    "Illusion"
-                ],
-                "items": [
-                    "Choice Specs"
-                ],
-                "teraTypes": [
-                    "Poison"
-                ],
-                "moves": [
-                    "Dark Pulse",
-                    "Flamethrower",
-                    "Focus Blast",
-                    "Psychic",
-                    "Sludge Bomb",
-                    "Trick",
-                    "U-turn"
-                ]
-            },
             "Setup Sweeper": {
                 "abilities": [
                     "Illusion"
@@ -25287,6 +25260,26 @@
                 "ivs": {
                     "atk": 0
                 }
+            },
+            "Wallbreaker": {
+                "abilities": [
+                    "Illusion"
+                ],
+                "items": [
+                    "Choice Specs"
+                ],
+                "teraTypes": [
+                    "Poison"
+                ],
+                "moves": [
+                    "Dark Pulse",
+                    "Flamethrower",
+                    "Focus Blast",
+                    "Psychic",
+                    "Sludge Bomb",
+                    "Trick",
+                    "U-turn"
+                ]
             }
         }
     },
