@@ -112,6 +112,8 @@ CUSTOM_ITEM_DESCRIPTIONS = {
     "Griseous Core": "Held by Giratina. Changes form to Origin Form. Boosts Ghost-type and Dragon-type moves by 20%."
 }
 
+CUSTOM_MOVE_DESCRIPTION = {}
+
 EXPLICIT_ABILITIES_FEATURES = {
     "unknown" : [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0],
     'Slush Rush': [0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0],
@@ -319,8 +321,7 @@ EXPLICIT_ABILITIES_FEATURES = {
     'Mega Launcher': [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
 }
 
-#Certains noms des pokemons des sets ne sont pas ceux attendus pas pokeAPI -> enamorus (pour la forme de base) au lieu de enamorus-incarnate pour pokeAPI
-NAME_CORRECTION = {}
+
 
 
 def get_one_hot_type(poke_type) :
@@ -334,16 +335,16 @@ def get_one_hot_type(poke_type) :
     return type_vector
 
 
-def get_moves_json(path : str, raw_moves : list) :
+def get_moves_json(path : str) :
     dict_moves = {}
     bad_moves = []
 
-    for move,id in MOVES_ID.items() :
+    for id,move in MOVES_ID.items() :
 
         description = "No description available."
 
-        if move == "unknown" :
-            dict_moves[id] = {
+        if move['raw_name'] == "unknown" :
+            dict_moves[move['showdown_id']] = {
                 "stats_vector" :[
                 0.0, # Base power
                 0.0, # Accuracy
@@ -355,11 +356,11 @@ def get_moves_json(path : str, raw_moves : list) :
             }
             continue
 
-        clean_move = move.replace(' ', '-')
-        response = requests.get(f'https://pokeapi.co/api/v2/move/{clean_move}/')
+        response = requests.get(f"https://pokeapi.co/api/v2/move/{move['api_name']}/")
 
         if response.status_code != 200 : 
             bad_moves.append((move,id))
+            print("Probleme Requete API " + move['api_name'])
 
         else :
             move_vec = []
@@ -393,12 +394,12 @@ def get_moves_json(path : str, raw_moves : list) :
                     description = entry["short_effect"].replace('\n', ' ')
                     break
 
-            dict_moves[id] = {
+            dict_moves[move['showdown_id']] = {
                 "stats_vector": move_vec,
                 "description": description
             }
             if description == 'No description available.' :
-                print(clean_move + " Pb desc")
+                print(move['raw_name'] + " Pb desc")
 
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(dict_moves, f, indent=4, ensure_ascii=False)
@@ -410,36 +411,35 @@ def get_items_json(path : str) :
     dict_items = {}
     bad_items = []
 
-    for item, id in ITEMS_ID.items() :
+    for id, item in ITEMS_ID.items() :
         description = "This Pokémon is holding an item, but its exact identity and effects are currently unknown."
 
-        if item == "unknown" :
-            dict_items[id] = {
-                "stats_vector" : EXPLICIT_ITEM_FEATURES.get(item),
+        if item['raw_name'] == "unknown" :
+            dict_items[item['showdown_id']] = {
+                "stats_vector" : EXPLICIT_ITEM_FEATURES.get(item['raw_name']),
                 "description": description
             }
             continue
 
-        if item == "No-item" :
-            dict_items[id] = {
-                "stats_vector" : EXPLICIT_ITEM_FEATURES.get(item),
+        if item['raw_name'] == "No-item" :
+            dict_items[item['showdown_id']] = {
+                "stats_vector" : EXPLICIT_ITEM_FEATURES.get(item['raw_name']),
             "description": "This Pokémon is not holding any item. It has no passive item effects."
             }
             continue
 
-        clean_item = item.replace(' ', '-')
-        response = requests.get(f'https://pokeapi.co/api/v2/item/{clean_item}/')
+        response = requests.get(f"https://pokeapi.co/api/v2/item/{item['api_name']}/")
 
         if response.status_code != 200 : 
-
-            bad_items.append((clean_item,id))
+            print("Probleme Requete API " + item['api_name'])
+            bad_items.append(item['api_name'])
 
         else :
             info_item = response.json()
 
-            item_vec = EXPLICIT_ITEM_FEATURES.get(item, "PROBLEM")
+            item_vec = EXPLICIT_ITEM_FEATURES.get(item['raw_name'], "PROBLEM")
 
-            description = CUSTOM_ITEM_DESCRIPTIONS.get(item, "PROBLEM")
+            description = CUSTOM_ITEM_DESCRIPTIONS.get(item['raw_name'], "PROBLEM")
 
             for entry in info_item.get("effect_entries", []):
                 if entry["language"]["name"] == "en" :
@@ -447,9 +447,9 @@ def get_items_json(path : str) :
                     break
                 
             if description == "This Pokémon is holding an item, but its exact identity and effects are currently unknown." :
-                description = CUSTOM_ITEM_DESCRIPTIONS.get(item, "PROBLEM")
+                description = CUSTOM_ITEM_DESCRIPTIONS.get(item['raw_name'], "PROBLEM")
 
-            dict_items[id] = {
+            dict_items[item['showdown_id']] = {
                 "stats_vector": item_vec,
                 "description": description
             }
@@ -464,37 +464,34 @@ def get_abilities_json(path : str) :
     dict_abilities = {}
     bad_abilities = []
 
-    for ability, id in ABILITIES_ID.items() :
+    for id, ability in ABILITIES_ID.items() :
         description = "This Pokémon's ability is not known"
 
-        if ability == "unknown" :
-            dict_abilities[id] = {
-            "stats_vector" : EXPLICIT_ABILITIES_FEATURES.get(ability),
+        if ability["raw_name"] == "unknown" :
+            dict_abilities[ability["showdown_id"]] = {
+            "stats_vector" : EXPLICIT_ABILITIES_FEATURES.get(ability["raw_name"]),
             "description": description
             }
             continue
 
-        clean_ability = ability.replace(' ', '-')
-        clean_ability = clean_ability.replace("'", '')
-        clean_ability = clean_ability.replace("(", '')
-        clean_ability = clean_ability.replace(")", '')
-        response = requests.get(f'https://pokeapi.co/api/v2/ability/{clean_ability}/')
+
+        response = requests.get(f"https://pokeapi.co/api/v2/ability/{ability['api_name']}/")
 
         if response.status_code != 200 : 
-            print(clean_ability)
-            bad_abilities.append((clean_ability,id))
+            print("Problème Requete API " + ability["api_name"])
+            bad_abilities.append(ability['raw_name'])
 
         else :
             info_ability = response.json()
 
-            ability_vec = EXPLICIT_ABILITIES_FEATURES.get(ability, "PROBLEM")
+            ability_vec = EXPLICIT_ABILITIES_FEATURES.get(ability["raw_name"], "PROBLEM")
             
             for entry in info_ability.get("effect_entries", []):
                 if entry["language"]["name"] == "en" :
                     description = entry["short_effect"].replace('\n', ' ')
                     break
 
-            dict_abilities[id] = {
+            dict_abilities[ability["showdown_id"]] = {
                 "stats_vector": ability_vec,
                 "description": description
             }

@@ -43,12 +43,95 @@ TYPE_TO_ID: Dict[str, int] = {
     "steel": 16,   "fairy": 17,   "stellar": 18, "unknown" : 19
 }
 
+#Certains noms des pokemons des sets ne sont pas ceux attendus pas pokeAPI -> enamorus (pour la forme de base) au lieu de enamorus-incarnate pour pokeAPI
+POKE_API_MAPPING = {
+    # --- Formes de base implicites (PokeAPI exige le nom complet de la forme) ---
+    "Basculin": "basculin-red-striped",
+    "Deoxys": "deoxys-normal",
+    "Enamorus": "enamorus-incarnate",
+    "Giratina": "giratina-altered",
+    "Landorus": "landorus-incarnate",
+    "Lycanroc": "lycanroc-midday",
+    "Meloetta": "meloetta-aria",
+    "Mimikyu": "mimikyu-disguised",
+    "Shaymin": "shaymin-land",
+    "Thundurus": "thundurus-incarnate",
+    "Tornadus": "tornadus-incarnate",
+    "Toxtricity": "toxtricity-amped",
+    "Urshifu": "urshifu-single-strike",
+    
+    # --- Pokémon avec des différences de genre codées en dur ---
+    "Basculegion": "basculegion-male",
+    "Basculegion-F": "basculegion-female",
+    "Indeedee": "indeedee-male",
+    "Indeedee-F": "indeedee-female",
+    "Meowstic": "meowstic-male",
+    "Meowstic-F": "meowstic-female",
+    "Oinkologne": "oinkologne-male",
+    "Oinkologne-F": "oinkologne-female",
+    
+    # --- Formes spécifiques et esthétiques ---
+    "Dudunsparce": "dudunsparce-two-segment",
+    "Eiscue": "eiscue-ice",
+    "Greninja-Bond": "greninja-battle-bond",
+    "Maushold": "maushold-family-of-four",
+    "Minior": "minior-red-meteor",
+    "Morpeko": "morpeko-full-belly",
+    "Necrozma-Dawn-Wings": "necrozma-dawn",
+    "Necrozma-Dusk-Mane": "necrozma-dusk",
+    "Oricorio": "oricorio-baile",
+    "Oricorio-Pa'u": "oricorio-pau",
+    "Palafin": "palafin-zero",
+    "Squawkabilly": "squawkabilly-green-plumage",
+    "Squawkabilly-Blue": "squawkabilly-blue-plumage",
+    "Squawkabilly-White": "squawkabilly-white-plumage",
+    "Squawkabilly-Yellow": "squawkabilly-yellow-plumage",
+    "Tatsugiri": "tatsugiri-curly",
+    
+    # --- Les Tauros de Paldea ---
+    "Tauros-Paldea-Aqua": "tauros-paldea-aqua-breed",
+    "Tauros-Paldea-Blaze": "tauros-paldea-blaze-breed",
+    "Tauros-Paldea-Combat": "tauros-paldea-combat-breed",
+    
+    # --- Les Arceus ---
+    # PokeAPI n'a pas les stats par type, donc on pointe tout sur le modèle de base (qui a 120 partout).
+    # RAPPEL : Dans ton code de téléchargement, n'oublie pas le hack pour écraser le type 
+    # API ("Normal") par le type contenu dans le raw_name !
+    "Arceus-Bug": "arceus",
+    "Arceus-Dark": "arceus",
+    "Arceus-Dragon": "arceus",
+    "Arceus-Electric": "arceus",
+    "Arceus-Fairy": "arceus",
+    "Arceus-Fighting": "arceus",
+    "Arceus-Fire": "arceus",
+    "Arceus-Flying": "arceus",
+    "Arceus-Ghost": "arceus",
+    "Arceus-Grass": "arceus",
+    "Arceus-Ground": "arceus",
+    "Arceus-Ice": "arceus",
+    "Arceus-Poison": "arceus",
+    "Arceus-Psychic": "arceus",
+    "Arceus-Rock": "arceus",
+    "Arceus-Steel": "arceus",
+    "Arceus-Water": "arceus",
+}
+
+
 def to_showdown_id(name: str) -> str:
     # Met en minuscules et garde uniquement les lettres et les chiffres
     return re.sub(r'[^a-z0-9]', '', name.lower())
 
     # Exemple : "Oricorio-Pa'u" -> "oricoriopau"
     # Exemple : "Iron Valiant" -> "ironvaliant"
+
+def to_api_id(name: str) -> str:
+    res = name.lower().replace("'","")
+    res = res.replace("(", '')
+    res = res.replace(")", '')
+    return res.replace(' ', '-')
+
+    # Exemple : "Oricorio-Pa'u" -> "oricorio-pau"
+    # Exemple : "Iron Valiant" -> "iron-valiant"
 
 def getPoolOfInfos(dico) :
     """
@@ -83,13 +166,35 @@ def getPoolOfInfos(dico) :
     return pokemons, list(moves), list(items), list(abilities)
 
 
-def list_to_dict_ID(listofItem) :
+def list_to_dict_ID(listofItem, POKE_API_MAPPING = None) :
     dico = {}
-    dico["unknown"] = 0
-    it = 1
-    for item in listofItem :
-        dico[to_showdown_id(item)] = it
-        it += 1
+
+    if POKE_API_MAPPING :
+        dico[0] = {
+        "raw_name": "unknown",
+        "showdown_id": "unknown",
+        "api_name": "unknown"}
+        it = 1
+        for item in listofItem :
+            dico[it] = {
+                "raw_name": item,
+                "showdown_id": to_showdown_id(item),
+                "api_name": POKE_API_MAPPING.get(item, to_api_id(item))
+            }
+            it += 1
+    else :
+        dico[0] = {
+                "raw_name": "unknown",
+                "showdown_id": "unknown",
+                "api_name": "unknown"}
+        it = 1
+        for item in listofItem :
+            dico[it] = {
+                "raw_name": item,
+                "showdown_id": to_showdown_id(item),
+                "api_name": to_api_id(item)
+            }
+            it += 1
     return dico
 
 
