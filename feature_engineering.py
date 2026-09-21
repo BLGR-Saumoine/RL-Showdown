@@ -336,8 +336,11 @@ def get_one_hot_type(poke_type) :
 
 
 def get_moves_json(path : str) :
+    # For the move  description I will use https://play.pokemonshowdown.com/data/moves.json as it is both more complete and more precise
     dict_moves = {}
     bad_moves = []
+
+    desc_json = requests.get(f"https://play.pokemonshowdown.com/data/moves.json").json()
 
     for id,move in MOVES_ID.items() :
 
@@ -389,10 +392,7 @@ def get_moves_json(path : str) :
             move_vec.extend(get_one_hot_type(info_move["type"]["name"]))
 
             #------------------------- Getting the description of the move ---------------------------------------
-            for entry in info_move.get("effect_entries", []):
-                if entry["language"]["name"] == "en" :
-                    description = entry["short_effect"].replace('\n', ' ')
-                    break
+            description  =  desc_json.get(move['showdown_id'], "YOHOHO")
 
             dict_moves[move['showdown_id']] = {
                 "stats_vector": move_vec,
