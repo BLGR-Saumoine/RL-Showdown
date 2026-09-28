@@ -322,6 +322,12 @@ EXPLICIT_ABILITIES_FEATURES = {
 }
 
 
+def get_showdown_desc(api_name) :
+
+    response = requests.get("https://play.pokemonshowdown.com/data/moves.json")
+    info_moves = response.json()
+    desc = info_moves[api_name]["desc"]
+    return desc
 
 
 def get_one_hot_type(poke_type) :
@@ -389,10 +395,8 @@ def get_moves_json(path : str) :
             move_vec.extend(get_one_hot_type(info_move["type"]["name"]))
 
             #------------------------- Getting the description of the move ---------------------------------------
-            for entry in info_move.get("effect_entries", []):
-                if entry["language"]["name"] == "en" :
-                    description = entry["short_effect"].replace('\n', ' ')
-                    break
+
+            description = get_showdown_desc(move['showdown_id'])
 
             dict_moves[move['showdown_id']] = {
                 "stats_vector": move_vec,
@@ -638,7 +642,6 @@ def get_pickle_FE(path_json : str, path_to_save : str) :
         }
     with open(path_to_save, 'wb') as f:
         pickle.dump(pickle_dict, f)
-
 
 
 
