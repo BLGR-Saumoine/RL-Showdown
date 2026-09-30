@@ -526,80 +526,76 @@ def get_poke_json(path : str) :
     with open('current_sets.json') as f:
         temp = json.load(f)
 
-    for poke, id in POKE_ID.items() :
+    response = requests.get('https://play.pokemonshowdown.com/data/pokedex.json')
 
-        if poke == "unknown" :
+    pokedex = response.json()
+
+    for id, poke in POKE_ID.items() :
+
+        if poke["raw_name"] == "unknown" :
             dict_poke[id] = {
             # One hot encoding type (19), weight, Base stats
             "stats_vector" : []
             }
             continue
 
-        clean_poke = poke.replace(' ', '-')
-        response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{clean_poke}/')
+        poke_vec = []
 
-        if response.status_code != 200 : 
-            print(poke + " Probleme api " + clean_poke)
-            bad_poke.append((poke,id))
+        info_poke = pokedex[poke["showdown_id"]]
 
-        else :
-            poke_vec = []
+        #-----Getting the pokemon type
+        list_type = []
+        for ele in info_poke['types'] : 
+            list_type.append(ele)
 
-            info_poke = response.json()
+        poke_vec.append(get_one_hot_type(list_type))
 
-            #-----Getting the pokemon type
-            list_type = []
-            for ele in info_poke['types'] : 
-                list_type.append(ele['type']['name'])
+        #----Getting the pokemon weight
 
-            poke_vec.append(get_one_hot_type(list_type))
+        poke_vec.append([math.log10(info_poke["weightkg"])])
 
-            #----Getting the pokemon weight
+        #----Getting the effectives stats
 
-            poke_vec.append([math.log10(info_poke["weight"])])
+        bstat = []
+        for ele in info_poke["baseStats"] :
+            bstat.append(info_poke["baseStats"][ele])
 
-            #----Getting the effectives stats
+        level = temp[poke["raw_name"]]["level"]
 
-            bstat = []
-            for ele in info_poke["stats"] :
-                bstat.append(ele["base_stat"])
+        poke_vec.append(calc_effective_stat(level, bstat))
 
-            level = temp[poke]["level"]
+        #----Getting the potential abilities
+        
+        id_abilities = []
 
-            poke_vec.append(calc_effective_stat(level, bstat))
+        potential_abilities = temp[poke["raw_name"]]["abilities"]
+        print(potential_abilities)
+        for abi in potential_abilities :
+            id_abilities.append(ABILITIES_ID.get(abi, "Ayya je suis le pire programmeur que le monde ait connu"))
+        poke_vec.append(id_abilities)
 
-            #----Getting the potential abilities
-            
-            id_abilities = []
+        #----Getting the potential items
 
-            potential_abilities = temp[poke]["abilities"]
+        id_items = []
+        test = temp[poke["raw_name"]]
+        potential_items = test.get("items", "O")
 
-            for abi in potential_abilities :
-                id_abilities.append(ABILITIES_ID.get(abi, "Ayya je suis le pire programmeur que le monde ait connu"))
-            poke_vec.append(id_abilities)
+        for items in potential_items :
+            id_items.append(ITEMS_ID.get(items, 0))
+        poke_vec.append(id_items)
 
-            #----Getting the potential items
+        #----Getting the potential tera types
+        teraList = []
 
-            id_items = []
-            test = temp[poke]
-            potential_items = test.get("items", "O")
+        roles = temp[poke["raw_name"]]["roles"]
+        for role in roles.keys() :
+            teraList += roles[role]["teraTypes"]
+        temp_set = set(teraList)
+        poke_vec.append(get_one_hot_type(list(temp_set)))
 
-            for items in potential_items :
-                id_items.append(ITEMS_ID.get(items, 0))
-            poke_vec.append(id_items)
-
-            #----Getting the potential tera types
-            teraList = []
-
-            roles = temp[poke]["roles"]
-            for role in roles.keys() :
-                teraList += roles[role]["teraTypes"]
-            temp_set = set(teraList)
-            poke_vec.append(get_one_hot_type(list(temp_set)))
-
-            dict_poke[id] = {
-                "stats_vector": poke_vec,
-            }
+        dict_poke[poke["showdown_id"]] = {
+            "stats_vector": poke_vec,
+        }
 
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(dict_poke, f, indent=4, ensure_ascii=False)

@@ -11,187 +11,7 @@
         ],
         "description": "This Pokémon's ability is not known"
     },
-    "swordofruin": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Lowers Defense of all Pokémon except itself."
-    },
-    "skilllink": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Extends two-to-five-hit moves and Triple Kick to their full length every time."
-    },
-    "infiltrator": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Bypasses Light Screen, Reflect, and Safeguard."
-    },
-    "overgrow": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
-    },
-    "waterabsorb": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Absorbs Water moves, healing for 1/4 max HP."
-    },
-    "electricsurge": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
-    },
-    "seedsower": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack."
-    },
-    "blaze": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens Fire moves to inflict 1.5× damage at 1/3 max HP or less."
-    },
-    "guts": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Increases Attack to 1.5× with a major status ailment."
-    },
-    "lightmetal": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves the Pokémon's weight."
-    },
-    "chlorophyll": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Speed during strong sunlight."
-    },
-    "waterbubble": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
-    },
-    "megalauncher": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens aura and pulse moves to 1.5× their power."
-    },
-    "liquidvoice": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Sound-based moves become Water-type."
-    },
-    "keeneye": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents accuracy from being lowered."
-    },
-    "berserk": {
+    "zerotohero": {
         "stats_vector": [
             0.0,
             1.0,
@@ -201,355 +21,7 @@
             0.0,
             0.0
         ],
-        "description": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half."
-    },
-    "eartheater": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Restores HP when hit by a Ground-type move."
-    },
-    "vitalspirit": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents sleep."
-    },
-    "slowstart": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves Attack and Speed for five turns upon entering battle."
-    },
-    "moxie": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Attack one stage upon KOing a Pokémon."
-    },
-    "pixilate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Turns the bearer's Normal moves into Fairy moves and strengthens them to 1.3× their power."
-    },
-    "earlybird": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Makes sleep pass twice as quickly."
-    },
-    "windrider": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Gives immunity to wind moves, and causes the Pokémon's Attack to increase by one stage when hit by one."
-    },
-    "sniper": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens critical hits to inflict 3× damage rather than 2×."
-    },
-    "sandrush": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-    },
-    "pressure": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Increases the PP cost of moves targetting the Pokémon by one."
-    },
-    "effectspore": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
-    },
-    "speedboost": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Speed one stage after each turn."
-    },
-    "shellarmor": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against critical hits."
-    },
-    "icebody": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
-    },
-    "surgesurfer": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles this Pokémon's Speed on Electric Terrain."
-    },
-    "cloudnine": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Negates all effects of weather, but does not prevent the weather itself."
-    },
-    "levitate": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Evades Ground moves."
-    },
-    "chillingneigh": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Boosts Attack after knocking out a Pokémon."
-    },
-    "liquidooze": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Damages opponents using leeching moves for as much as they would heal."
-    },
-    "turboblaze": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Bypasses targets' abilities if they could hinder or prevent moves."
-    },
-    "cutecharm": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of infatuating attacking Pokémon on contact."
-    },
-    "serenegrace": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles the chance of moves' extra effects occurring."
-    },
-    "grimneigh": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Boosts Special Attack after knocking out a Pokémon."
-    },
-    "furcoat": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage from physical attacks."
-    },
-    "synchronize": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
-    },
-    "defiant": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Attack two stages upon having any stat lowered."
-    },
-    "intrepidsword": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Boosts Attack in battle."
-    },
-    "toughclaws": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens moves that make contact to 1.33× their power."
-    },
-    "soundproof": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against sound-based moves."
+        "description": "Transforms into its Hero Form when switching out."
     },
     "grassysurge": {
         "stats_vector": [
@@ -563,318 +35,6 @@
         ],
         "description": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
     },
-    "static": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
-    },
-    "harvest": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
-    },
-    "punkrock": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Boosts sound-based moves and halves damage from the same moves."
-    },
-    "tintedlens": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles damage inflicted with not-very-effective moves."
-    },
-    "lightningrod": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Redirects single-target Electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
-    },
-    "technician": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens moves of 60 base power or less to 1.5× their power."
-    },
-    "protean": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Changes the bearer's type to match each move it uses."
-    },
-    "baddreams": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Damages sleeping opponents for 1/8 their max HP after each turn."
-    },
-    "dauntlessshield": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Boosts Defense in battle."
-    },
-    "hustle": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-    },
-    "rockypayload": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Powers up Rock-type moves."
-    },
-    "damp": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle."
-    },
-    "trace": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Copies an opponent's ability upon entering battle."
-    },
-    "flamebody": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of burning attacking Pokémon on contact."
-    },
-    "psychicsurge": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
-    },
-    "beadsofruin": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Lowers Special Defense of all Pokémon except itself."
-    },
-    "bigpecks": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against Defense drops."
-    },
-    "aftermath": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
-    },
-    "shadowtag": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents opponents from fleeing or switching out."
-    },
-    "shieldsdown": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Transforms this Minior between Core Form and Meteor Form.  Prevents major status ailments and drowsiness while in Meteor Form."
-    },
-    "angershell": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When the Pokémon's HP drops below half, Anger Shell lowers its Defense and Special Defense but its Attack, Special Attack and Speed are raised."
-    },
-    "libero": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Libero changes the Pokémon's type to that of its previously used attack."
-    },
-    "snowwarning": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Summons hail that lasts indefinitely upon entering battle."
-    },
-    "hugepower": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Attack in battle."
-    },
-    "galewings": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Flying moves' priority by one stage."
-    },
-    "download": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
-    },
     "watercompaction": {
         "stats_vector": [
             1.0,
@@ -886,90 +46,6 @@
             0.0
         ],
         "description": "Raises this Pokémon's Defense by two stages when it's hit by a Water move."
-    },
-    "strongjaw": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens biting moves to 1.5× their power."
-    },
-    "rattled": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
-    },
-    "tanglinghair": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage."
-    },
-    "toxicdebris": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves."
-    },
-    "stakeout": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon's moves have double power against Pokémon that switched in this turn."
-    },
-    "airlock": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Negates all effects of weather, but does not prevent the weather itself."
-    },
-    "leafguard": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against major status ailments during strong sunlight."
     },
     "drizzle": {
         "stats_vector": [
@@ -983,258 +59,6 @@
         ],
         "description": "Summons rain that lasts indefinitely upon entering battle."
     },
-    "analytic": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens moves to 1.3× their power when moving last."
-    },
-    "pickpocket": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Steals attacking Pokémon's held items on contact."
-    },
-    "gulpmissile": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "If a Cramorant with Gulp Missile uses Surf or Dive, it catches prey and changes its form depending on its remaining HP."
-    },
-    "terashift": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When Terapagos enters the battle, it turns into its Terastal Form until the end of the battle. "
-    },
-    "clearbody": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents stats from being lowered by other Pokémon."
-    },
-    "illusion": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
-    },
-    "dragonsmaw": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Powers up Dragon-type moves."
-    },
-    "cheekpouch": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Restores HP upon eating a Berry, in addition to the Berry's effect."
-    },
-    "innerfocus": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents flinching."
-    },
-    "imposter": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Transforms upon entering battle."
-    },
-    "truant": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Skips every second turn."
-    },
-    "battlebond": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times."
-    },
-    "unburden": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Speed upon using or losing a held item."
-    },
-    "dryskin": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from Fire moves to 1.25×, but absorbs Water moves, healing for 1/4 max HP."
-    },
-    "iceface": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "The Pokémon’s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon’s appearance. The ice will be restored when it snows."
-    },
-    "hadronengine": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Creates an Electric Terrain when entering battle, and boosts Special Attack while active."
-    },
-    "shadowshield": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When this Pokémon has full HP, regular damage from moves is halved."
-    },
-    "prankster": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises non-damaging moves' priority by one stage."
-    },
-    "sandstream": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Summons a sandstorm that lasts indefinitely upon entering battle."
-    },
-    "swiftswim": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Speed during rain."
-    },
-    "contrary": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Inverts stat changes."
-    },
     "toxicboost": {
         "stats_vector": [
             1.0,
@@ -1247,7 +71,7 @@
         ],
         "description": "Increases Attack to 1.5× when poisoned."
     },
-    "tabletsofruin": {
+    "punkrock": {
         "stats_vector": [
             0.0,
             0.0,
@@ -1257,69 +81,9 @@
             0.0,
             0.0
         ],
-        "description": "Lowers Attack of all Pokémon except itself."
+        "description": "Boosts sound-based moves and halves damage from the same moves."
     },
-    "goodasgold": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Gives immunity to status moves."
-    },
-    "solidrock": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Decreases damage taken from super-effective moves by 1/4."
-    },
-    "overcoat": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against damage from weather."
-    },
-    "heatproof": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage from Fire moves and burns."
-    },
-    "sturdy": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-    },
-    "asonespectrier": {
+    "berserk": {
         "stats_vector": [
             0.0,
             1.0,
@@ -1329,847 +93,7 @@
             0.0,
             0.0
         ],
-        "description": "Combines the effects of Unnerve and Grim Neigh."
-    },
-    "multiscale": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage taken from full HP."
-    },
-    "unseenfist": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Contact moves can strike through Protect/Detect."
-    },
-    "multitype": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Changes Arceus's type and form to match its held Plate."
-    },
-    "protosynthesis": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises highest stat in harsh sunlight, or if holding Booster Energy."
-    },
-    "cursedbody": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of Disabling any move that hits the Pokémon."
-    },
-    "mirrorarmor": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Reflects any stat-lowering effects."
-    },
-    "justified": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Attack one stage upon taking damage from a Dark move."
-    },
-    "shedskin": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Has a 33% chance of curing any major status ailment after each turn."
-    },
-    "powerspot": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Just being next to the Pokémon powers up moves."
-    },
-    "quickfeet": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Increases Speed to 1.5× with a major status ailment."
-    },
-    "magicguard": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against damage not directly caused by a move."
-    },
-    "stormdrain": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Redirects single-target Water moves to this Pokémon where possible.  Absorbs Water moves, raising Special Attack one stage."
-    },
-    "naturalcure": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Cures any major status ailment upon switching out."
-    },
-    "reckless": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens recoil moves to 1.2× their power."
-    },
-    "hydration": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Cures any major status ailment after each turn during rain."
-    },
-    "transistor": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Powers up Electric-type moves."
-    },
-    "thermalexchange": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Attack when hit by a Fire-type move. Cannot be burned."
-    },
-    "rockhead": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against recoil damage."
-    },
-    "stamina": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
-    },
-    "fullmetalbody": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Other Pokémon cannot lower this Pokémon's stats."
-    },
-    "electromorphosis": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "When hit by an attack, the power of the next Electric-type move it uses is doubled."
-    },
-    "sharpness": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Powers up slicing moves."
-    },
-    "heavymetal": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles the Pokémon's weight."
-    },
-    "swarm": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens Bug moves to inflict 1.5× damage at 1/3 max HP or less."
-    },
-    "adaptability": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Increases the same-type attack bonus from 1.5× to 2×."
-    },
-    "poisonpuppeteer": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Pokémon poisoned by Pecharunt's moves will also become confused."
-    },
-    "arenatrap": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents opponents from fleeing or switching out.  Eluded by Flying-types and Pokémon in the air."
-    },
-    "prismarmor": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Reduces super-effective damage to 0.75×."
-    },
-    "quarkdrive": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises highest stat on Electric Terrain, or if holding Booster Energy."
-    },
-    "hungerswitch": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode"
-    },
-    "unaware": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
-    },
-    "filter": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Decreases damage taken from super-effective moves by 1/4."
-    },
-    "gooey": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Lowers attacking Pokémon's Speed by one stage on contact."
-    },
-    "scrappy": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Lets the Pokémon's Normal and Fighting moves hit Ghost Pokémon."
-    },
-    "stickyhold": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents a held item from being removed by other Pokémon."
-    },
-    "shielddust": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against incoming moves' extra effects."
-    },
-    "drought": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
-    },
-    "mindseye": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves."
-    },
-    "galvanize": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon's Normal moves are Electric and have their power increased to 1.2×."
-    },
-    "poisonheal": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
-    },
-    "weakarmor": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
-    },
-    "thickfat": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage from Fire and Ice moves."
-    },
-    "flashfire": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against Fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-    },
-    "waterveil": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents burns."
-    },
-    "poisontouch": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Has a 30% chance of poisoning target Pokémon upon contact."
-    },
-    "voltabsorb": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Absorbs Electric moves, healing for 1/4 max HP."
-    },
-    "comatose": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon always  acts as though it were Asleep."
-    },
-    "toxicchain": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "May cause bad poisoning when the Pokémon hits an opponent with a move."
-    },
-    "queenlymajesty": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Opposing Pokémon cannot use priority attacks."
-    },
-    "regenerator": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Heals for 1/3 max HP upon switching out."
-    },
-    "insomnia": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents sleep."
-    },
-    "compoundeyes": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Increases moves' accuracy to 1.3×."
-    },
-    "soulheart": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon's Special Attack rises by one stage every time any Pokémon faints."
-    },
-    "corrosion": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon can inflict poison on Poison and Steel Pokémon."
-    },
-    "teravolt": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Bypasses targets' abilities if they could hinder or prevent moves."
-    },
-    "magnetpull": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents Steel opponents from fleeing or switching out."
-    },
-    "moldbreaker": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Bypasses targets' abilities if they could hinder or prevent a move."
-    },
-    "oblivious": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents infatuation and protects against Captivate."
-    },
-    "limber": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents paralysis."
-    },
-    "aromaveil": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects allies against moves that affect their mental state."
-    },
-    "roughskin": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Damages attacking Pokémon for 1/8 their max HP on contact."
-    },
-    "magician": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Steals the target's held item when the bearer uses a damaging move."
-    },
-    "unnerve": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents opposing Pokémon from eating held Berries."
-    },
-    "slushrush": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "During Hail, this Pokémon has double Speed."
-    },
-    "sapsipper": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Absorbs Grass moves, raising Attack one stage."
-    },
-    "frisk": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Reveals an opponent's held item upon entering battle."
-    },
-    "intimidate": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Lowers opponents' Attack one stage upon entering battle."
-    },
-    "disguise": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Prevents the first instance of battle damage."
-    },
-    "myceliummight": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Status moves go last, but are not affected by the opponent's ability."
-    },
-    "dancer": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards."
+        "description": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half."
     },
     "competitive": {
         "stats_vector": [
@@ -2183,6 +107,66 @@
         ],
         "description": "Raises Special Attack by two stages upon having any stat lowered."
     },
+    "speedboost": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Speed one stage after each turn."
+    },
+    "turboblaze": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Bypasses targets' abilities if they could hinder or prevent moves."
+    },
+    "shieldsdown": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Transforms this Minior between Core Form and Meteor Form.  Prevents major status ailments and drowsiness while in Meteor Form."
+    },
+    "effectspore": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
+    },
+    "grimneigh": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Boosts Special Attack after knocking out a Pokémon."
+    },
     "torrent": {
         "stats_vector": [
             0.0,
@@ -2195,67 +179,43 @@
         ],
         "description": "Strengthens Water moves to inflict 1.5× damage at 1/3 max HP or less."
     },
-    "supremeoverlord": {
+    "windrider": {
         "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
             1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
             0.0,
             0.0
         ],
-        "description": "Attack and Special Attack are boosted for each party Pokémon that has been defeated."
+        "description": "Gives immunity to wind moves, and causes the Pokémon's Attack to increase by one stage when hit by one."
     },
-    "orichalcumpulse": {
+    "sharpness": {
         "stats_vector": [
             0.0,
             0.0,
-            1.0,
+            0.0,
             0.0,
             1.0,
             0.0,
             0.0
         ],
-        "description": "Turns the sunlight harsh when entering battle, and boosts Attack while active."
+        "description": "Powers up slicing moves."
     },
-    "cudchew": {
+    "hadronengine": {
         "stats_vector": [
             0.0,
             0.0,
+            1.0,
             0.0,
-            0.0,
-            0.0,
+            1.0,
             0.0,
             0.0
         ],
-        "description": "Causes the Pokémon to reuse an already consumed Berry at the end of the next turn."
+        "description": "Creates an Electric Terrain when entering battle, and boosts Special Attack while active."
     },
-    "purepower": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Attack in battle."
-    },
-    "wellbakedbody": {
-        "stats_vector": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Immune to Fire-type moves, and Defense is sharply boosted."
-    },
-    "asoneglastrier": {
+    "defiant": {
         "stats_vector": [
             0.0,
             1.0,
@@ -2265,91 +225,7 @@
             0.0,
             0.0
         ],
-        "description": "Combines the effects of Unnerve and Chilling Neigh."
-    },
-    "triage": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "This Pokémon's healing moves have their priority increased by 3."
-    },
-    "fluffy": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Damage from contact moves is halved.  Damage from Fire moves is doubled."
-    },
-    "zerotohero": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Transforms into its Hero Form when switching out."
-    },
-    "motordrive": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Absorbs Electric moves, raising Speed one stage."
-    },
-    "icescales": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Halves damage from Special moves."
-    },
-    "purifyingsalt": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects from status conditions and halves damage from Ghost-type moves."
-    },
-    "vesselofruin": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Lowers Special Attack of all Pokémon except itself."
+        "description": "Raises Attack two stages upon having any stat lowered."
     },
     "owntempo": {
         "stats_vector": [
@@ -2363,30 +239,6 @@
         ],
         "description": "Prevents confusion."
     },
-    "sandforce": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Strengthens Rock, Ground, and Steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
-    },
-    "bulletproof": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Protects against bullet, ball, and bomb-based moves."
-    },
     "sheerforce": {
         "stats_vector": [
             0.0,
@@ -2399,21 +251,33 @@
         ],
         "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
     },
-    "magicbounce": {
+    "tanglinghair": {
         "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
             1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
             0.0
         ],
-        "description": "Reflects most non-damaging moves back at their user."
+        "description": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage."
     },
-    "flowerveil": {
+    "poisontouch": {
         "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
             1.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of poisoning target Pokémon upon contact."
+    },
+    "truant": {
+        "stats_vector": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -2421,7 +285,19 @@
             0.0,
             0.0
         ],
-        "description": "Protects friendly Grass Pokémon from having their stats lowered by other Pokémon."
+        "description": "Skips every second turn."
+    },
+    "slushrush": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "During Hail, this Pokémon has double Speed."
     },
     "ironfist": {
         "stats_vector": [
@@ -2435,6 +311,894 @@
         ],
         "description": "Strengthens punch-based moves to 1.2× their power."
     },
+    "damp": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle."
+    },
+    "moldbreaker": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Bypasses targets' abilities if they could hinder or prevent a move."
+    },
+    "quickfeet": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Increases Speed to 1.5× with a major status ailment."
+    },
+    "hugepower": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Attack in battle."
+    },
+    "synchronize": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+    },
+    "trace": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Copies an opponent's ability upon entering battle."
+    },
+    "compoundeyes": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Increases moves' accuracy to 1.3×."
+    },
+    "comatose": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon always  acts as though it were Asleep."
+    },
+    "cutecharm": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    "limber": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents paralysis."
+    },
+    "beadsofruin": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lowers Special Defense of all Pokémon except itself."
+    },
+    "unburden": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Speed upon using or losing a held item."
+    },
+    "guts": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Increases Attack to 1.5× with a major status ailment."
+    },
+    "keeneye": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents accuracy from being lowered."
+    },
+    "solidrock": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Decreases damage taken from super-effective moves by 1/4."
+    },
+    "insomnia": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents sleep."
+    },
+    "leafguard": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against major status ailments during strong sunlight."
+    },
+    "stakeout": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon's moves have double power against Pokémon that switched in this turn."
+    },
+    "toxicdebris": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves."
+    },
+    "unseenfist": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Contact moves can strike through Protect/Detect."
+    },
+    "overcoat": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against damage from weather."
+    },
+    "oblivious": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents infatuation and protects against Captivate."
+    },
+    "unaware": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
+    },
+    "teravolt": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Bypasses targets' abilities if they could hinder or prevent moves."
+    },
+    "earlybird": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Makes sleep pass twice as quickly."
+    },
+    "purepower": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Attack in battle."
+    },
+    "magicguard": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against damage not directly caused by a move."
+    },
+    "lightmetal": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves the Pokémon's weight."
+    },
+    "voltabsorb": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Absorbs Electric moves, healing for 1/4 max HP."
+    },
+    "technician": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens moves of 60 base power or less to 1.5× their power."
+    },
+    "waterbubble": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
+    },
+    "eartheater": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Restores HP when hit by a Ground-type move."
+    },
+    "cloudnine": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    "frisk": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Reveals an opponent's held item upon entering battle."
+    },
+    "aftermath": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
+    },
+    "infiltrator": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Bypasses Light Screen, Reflect, and Safeguard."
+    },
+    "waterveil": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents burns."
+    },
+    "quarkdrive": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises highest stat on Electric Terrain, or if holding Booster Energy."
+    },
+    "fluffy": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Damage from contact moves is halved.  Damage from Fire moves is doubled."
+    },
+    "cudchew": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Causes the Pokémon to reuse an already consumed Berry at the end of the next turn."
+    },
+    "motordrive": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Absorbs Electric moves, raising Speed one stage."
+    },
+    "dancer": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards."
+    },
+    "poisonpuppeteer": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Pokémon poisoned by Pecharunt's moves will also become confused."
+    },
+    "asoneglastrier": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Combines the effects of Unnerve and Chilling Neigh."
+    },
+    "asonespectrier": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Combines the effects of Unnerve and Grim Neigh."
+    },
+    "heavymetal": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles the Pokémon's weight."
+    },
+    "sniper": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens critical hits to inflict 3× damage rather than 2×."
+    },
+    "flashfire": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against Fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+    },
+    "bigpecks": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against Defense drops."
+    },
+    "battlebond": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times."
+    },
+    "dauntlessshield": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Boosts Defense in battle."
+    },
+    "multiscale": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage taken from full HP."
+    },
+    "liquidooze": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Damages opponents using leeching moves for as much as they would heal."
+    },
+    "multitype": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Changes Arceus's type and form to match its held Plate."
+    },
+    "stickyhold": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents a held item from being removed by other Pokémon."
+    },
+    "naturalcure": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Cures any major status ailment upon switching out."
+    },
+    "clearbody": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents stats from being lowered by other Pokémon."
+    },
+    "soulheart": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon's Special Attack rises by one stage every time any Pokémon faints."
+    },
+    "snowwarning": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Summons hail that lasts indefinitely upon entering battle."
+    },
+    "surgesurfer": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles this Pokémon's Speed on Electric Terrain."
+    },
+    "hustle": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+    },
+    "gulpmissile": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "If a Cramorant with Gulp Missile uses Surf or Dive, it catches prey and changes its form depending on its remaining HP."
+    },
+    "sturdy": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+    },
+    "cursedbody": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of Disabling any move that hits the Pokémon."
+    },
+    "rockypayload": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Powers up Rock-type moves."
+    },
+    "download": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
+    },
+    "vesselofruin": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lowers Special Attack of all Pokémon except itself."
+    },
+    "goodasgold": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Gives immunity to status moves."
+    },
+    "hydration": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Cures any major status ailment after each turn during rain."
+    },
+    "arenatrap": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents opponents from fleeing or switching out.  Eluded by Flying-types and Pokémon in the air."
+    },
+    "intimidate": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    "baddreams": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Damages sleeping opponents for 1/8 their max HP after each turn."
+    },
+    "powerspot": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Just being next to the Pokémon powers up moves."
+    },
+    "gooey": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Lowers attacking Pokémon's Speed by one stage on contact."
+    },
     "noguard": {
         "stats_vector": [
             0.0,
@@ -2446,5 +1210,1241 @@
             0.0
         ],
         "description": "Ensures all moves used by and against the Pokémon hit."
+    },
+    "scrappy": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lets the Pokémon's Normal and Fighting moves hit Ghost Pokémon."
+    },
+    "tabletsofruin": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lowers Attack of all Pokémon except itself."
+    },
+    "sandstream": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Summons a sandstorm that lasts indefinitely upon entering battle."
+    },
+    "weakarmor": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+    },
+    "prismarmor": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Reduces super-effective damage to 0.75×."
+    },
+    "disguise": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents the first instance of battle damage."
+    },
+    "overgrow": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    "dragonsmaw": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Powers up Dragon-type moves."
+    },
+    "soundproof": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against sound-based moves."
+    },
+    "transistor": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Powers up Electric-type moves."
+    },
+    "illusion": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
+    },
+    "stamina": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
+    },
+    "chillingneigh": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Boosts Attack after knocking out a Pokémon."
+    },
+    "reckless": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens recoil moves to 1.2× their power."
+    },
+    "static": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+    },
+    "furcoat": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage from physical attacks."
+    },
+    "galewings": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Flying moves' priority by one stage."
+    },
+    "shielddust": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against incoming moves' extra effects."
+    },
+    "justified": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Attack one stage upon taking damage from a Dark move."
+    },
+    "adaptability": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Increases the same-type attack bonus from 1.5× to 2×."
+    },
+    "psychicsurge": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
+    },
+    "supremeoverlord": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Attack and Special Attack are boosted for each party Pokémon that has been defeated."
+    },
+    "mirrorarmor": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Reflects any stat-lowering effects."
+    },
+    "iceface": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "The Pokémon’s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon’s appearance. The ice will be restored when it snows."
+    },
+    "liquidvoice": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Sound-based moves become Water-type."
+    },
+    "regenerator": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Heals for 1/3 max HP upon switching out."
+    },
+    "libero": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Libero changes the Pokémon's type to that of its previously used attack."
+    },
+    "serenegrace": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles the chance of moves' extra effects occurring."
+    },
+    "aromaveil": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects allies against moves that affect their mental state."
+    },
+    "thermalexchange": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Attack when hit by a Fire-type move. Cannot be burned."
+    },
+    "harvest": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
+    },
+    "prankster": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises non-damaging moves' priority by one stage."
+    },
+    "electromorphosis": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When hit by an attack, the power of the next Electric-type move it uses is doubled."
+    },
+    "toughclaws": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens moves that make contact to 1.33× their power."
+    },
+    "pressure": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    "levitate": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Evades Ground moves."
+    },
+    "terashift": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When Terapagos enters the battle, it turns into its Terastal Form until the end of the battle. "
+    },
+    "mindseye": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves."
+    },
+    "contrary": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Inverts stat changes."
+    },
+    "pixilate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Turns the bearer's Normal moves into Fairy moves and strengthens them to 1.3× their power."
+    },
+    "lightningrod": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Redirects single-target Electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
+    },
+    "filter": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Decreases damage taken from super-effective moves by 1/4."
+    },
+    "swiftswim": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Speed during rain."
+    },
+    "blaze": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens Fire moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    "galvanize": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon's Normal moves are Electric and have their power increased to 1.2×."
+    },
+    "heatproof": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage from Fire moves and burns."
+    },
+    "sapsipper": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Absorbs Grass moves, raising Attack one stage."
+    },
+    "toxicchain": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "May cause bad poisoning when the Pokémon hits an opponent with a move."
+    },
+    "stormdrain": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Redirects single-target Water moves to this Pokémon where possible.  Absorbs Water moves, raising Special Attack one stage."
+    },
+    "corrosion": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon can inflict poison on Poison and Steel Pokémon."
+    },
+    "strongjaw": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens biting moves to 1.5× their power."
+    },
+    "rockhead": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against recoil damage."
+    },
+    "flamebody": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Has a 30% chance of burning attacking Pokémon on contact."
+    },
+    "unnerve": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents opposing Pokémon from eating held Berries."
+    },
+    "waterabsorb": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Absorbs Water moves, healing for 1/4 max HP."
+    },
+    "angershell": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When the Pokémon's HP drops below half, Anger Shell lowers its Defense and Special Defense but its Attack, Special Attack and Speed are raised."
+    },
+    "protosynthesis": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises highest stat in harsh sunlight, or if holding Booster Energy."
+    },
+    "swordofruin": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Lowers Defense of all Pokémon except itself."
+    },
+    "myceliummight": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Status moves go last, but are not affected by the opponent's ability."
+    },
+    "pickpocket": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Steals attacking Pokémon's held items on contact."
+    },
+    "seedsower": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack."
+    },
+    "tintedlens": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles damage inflicted with not-very-effective moves."
+    },
+    "dryskin": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from Fire moves to 1.25×, but absorbs Water moves, healing for 1/4 max HP."
+    },
+    "magnetpull": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents Steel opponents from fleeing or switching out."
+    },
+    "hungerswitch": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode"
+    },
+    "vitalspirit": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents sleep."
+    },
+    "electricsurge": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
+    },
+    "roughskin": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Damages attacking Pokémon for 1/8 their max HP on contact."
+    },
+    "flowerveil": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects friendly Grass Pokémon from having their stats lowered by other Pokémon."
+    },
+    "cheekpouch": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Restores HP upon eating a Berry, in addition to the Berry's effect."
+    },
+    "shadowtag": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents opponents from fleeing or switching out."
+    },
+    "analytic": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens moves to 1.3× their power when moving last."
+    },
+    "rattled": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
+    },
+    "magician": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Steals the target's held item when the bearer uses a damaging move."
+    },
+    "sandforce": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens Rock, Ground, and Steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
+    },
+    "slowstart": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves Attack and Speed for five turns upon entering battle."
+    },
+    "intrepidsword": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Boosts Attack in battle."
+    },
+    "purifyingsalt": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects from status conditions and halves damage from Ghost-type moves."
+    },
+    "moxie": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Attack one stage upon KOing a Pokémon."
+    },
+    "orichalcumpulse": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Turns the sunlight harsh when entering battle, and boosts Attack while active."
+    },
+    "icescales": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage from Special moves."
+    },
+    "megalauncher": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens aura and pulse moves to 1.5× their power."
+    },
+    "magicbounce": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Reflects most non-damaging moves back at their user."
+    },
+    "sandrush": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+    },
+    "protean": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Changes the bearer's type to match each move it uses."
+    },
+    "wellbakedbody": {
+        "stats_vector": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Immune to Fire-type moves, and Defense is sharply boosted."
+    },
+    "innerfocus": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Prevents flinching."
+    },
+    "drought": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
+    },
+    "fullmetalbody": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Other Pokémon cannot lower this Pokémon's stats."
+    },
+    "airlock": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    "imposter": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Transforms upon entering battle."
+    },
+    "skilllink": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Extends two-to-five-hit moves and Triple Kick to their full length every time."
+    },
+    "poisonheal": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+    },
+    "queenlymajesty": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Opposing Pokémon cannot use priority attacks."
+    },
+    "swarm": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Strengthens Bug moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    "shellarmor": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against critical hits."
+    },
+    "chlorophyll": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Speed during strong sunlight."
+    },
+    "triage": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "This Pokémon's healing moves have their priority increased by 3."
+    },
+    "bulletproof": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Protects against bullet, ball, and bomb-based moves."
+    },
+    "icebody": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
+    },
+    "thickfat": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Halves damage from Fire and Ice moves."
+    },
+    "shadowshield": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "When this Pokémon has full HP, regular damage from moves is halved."
+    },
+    "shedskin": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Has a 33% chance of curing any major status ailment after each turn."
     }
 }

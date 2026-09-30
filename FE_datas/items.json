@@ -10,116 +10,6 @@
         ],
         "description": "This Pokémon is holding an item, but its exact identity and effects are currently unknown."
     },
-    "loadeddice": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Multi-hit moves hit more consistently, guaranteeing at least 4 hits for standard 2-5 hit moves."
-    },
-    "airballoon": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
-    },
-    "souldew": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises Latias and Latios’s Special Attack and Special Defense by 50%."
-    },
-    "lightclay": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Light Screen and Reflect used by the holder last 8 rounds instead of 5."
-    },
-    "heavydutyboots": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: The holder is completely immune to all entry hazard damage and effects (Stealth Rock, Spikes, Toxic Spikes, Sticky Web)."
-    },
-    "pixieplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Fairy-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fairy."
-    },
-    "fistplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Fighting-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fighting."
-    },
-    "leppaberry": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Consumed when a move runs out of PP to restore its PP by 10."
-    },
-    "chestoberry": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Consumed when asleep to cure sleep."
-    },
-    "flameorb": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Inflicts Burn on the holder at the end of the turn. Activates after Burn damage would occur."
-    },
     "skyplate": {
         "stats_vector": [
             0.0,
@@ -131,28 +21,6 @@
         ],
         "description": "Held: Flying-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Flying."
     },
-    "boosterenergy": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Activates Protosynthesis or Quark Drive abilities upon entry. Consumed after use."
-    },
-    "dracoplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Dragon-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Dragon."
-    },
     "ironplate": {
         "stats_vector": [
             0.0,
@@ -163,358 +31,6 @@
             0.0
         ],
         "description": "Held: Steel-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Steel."
-    },
-    "lumberry": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Consumed to cure any status condition or confusion."
-    },
-    "earthplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Ground-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ground."
-    },
-    "lightball": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Doubles Pikachu’s Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle."
-    },
-    "rustedshield": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Zamazenta. Changes form to Crowned Shield. Cannot be knocked off or tricked. Changes Iron Head into Behemoth Bash."
-    },
-    "zapplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Electric-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Electric."
-    },
-    "adamantcrystal": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Dialga. Changes form to Origin Form. Boosts Steel-type and Dragon-type moves by 20%."
-    },
-    "cornerstonemask": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Ogerpon. Changes form to Cornerstone Mask. Boosts Rock-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Rock-type move."
-    },
-    "flameplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Fire-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fire."
-    },
-    "splashplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Water-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Water."
-    },
-    "lustrousglobe": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Palkia. Changes form to Origin Form. Boosts Water-type and Dragon-type moves by 20%."
-    },
-    "insectplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Bug-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Bug."
-    },
-    "throatspray": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Raises the holder's Special Attack by 1 stage after it uses a sound-based move. Consumed after use."
-    },
-    "magnet": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Electric-Type moves from holder do 20% more damage."
-    },
-    "lifeorb": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Holder’s moves inflict 30% extra damage, but cost 10% max HP."
-    },
-    "wellspringmask": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Ogerpon. Changes form to Wellspring Mask. Boosts Water-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Water-type move."
-    },
-    "choicescarf": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Increases Speed by 50%, but restricts the holder to only one move."
-    },
-    "rustedsword": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Zacian. Changes form to Crowned Sword. Cannot be knocked off or tricked. Changes Iron Head into Behemoth Blade."
-    },
-    "whiteherb": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
-    },
-    "custapberry": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Consumed at 1/4 max HP when using a move to go first."
-    },
-    "silkscarf": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Normal-Type moves from holder do 20% more damage."
-    },
-    "choiceband": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Increases Attack by 50%, but restricts the holder to only one move."
-    },
-    "silverpowder": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Bug-Type moves from holder do 20% more damage."
-    },
-    "spookyplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Ghost-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ghost."
-    },
-    "powerherb": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
-    },
-    "leftovers": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Restores 1/16 (6.25%) holder’s max HP at the end of each turn."
-    },
-    "meadowplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Grass-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Grass."
-    },
-    "hearthflamemask": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held by Ogerpon. Changes form to Hearthflame Mask. Boosts Fire-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Fire-type move."
-    },
-    "choicespecs": {
-        "stats_vector": [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Increases Special Attack by 50%, but restricts the holder to only one move."
-    },
-    "expertbelt": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Holder’s Super Effective moves do 20% extra damage."
-    },
-    "dreadplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Dark-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Dark."
-    },
-    "mindplate": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        ],
-        "description": "Held: Psychic-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Psychic."
-    },
-    "weaknesspolicy": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: When the holder is hit by a super effective move, its Attack and Special Attack raise by two stages."
     },
     "sitrusberry": {
         "stats_vector": [
@@ -538,6 +54,72 @@
         ],
         "description": "Held: Holder has 1.5× Defense and Special Defense, as long as it’s not fully evolved."
     },
+    "toxicplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Poison-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Poison."
+    },
+    "powerherb": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
+    },
+    "throatspray": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Raises the holder's Special Attack by 1 stage after it uses a sound-based move. Consumed after use."
+    },
+    "adamantcrystal": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Dialga. Changes form to Origin Form. Boosts Steel-type and Dragon-type moves by 20%."
+    },
+    "lumberry": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Consumed to cure any status condition or confusion."
+    },
+    "pixieplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Fairy-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fairy."
+    },
     "rockyhelmet": {
         "stats_vector": [
             0.0,
@@ -549,7 +131,18 @@
         ],
         "description": "Held: When the holder is hit by a contact move, the attacking Pokémon takes 1/6 its max HP in damage."
     },
-    "widelens": {
+    "cornerstonemask": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Ogerpon. Changes form to Cornerstone Mask. Boosts Rock-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Rock-type move."
+    },
+    "expertbelt": {
         "stats_vector": [
             0.0,
             0.0,
@@ -558,7 +151,139 @@
             0.0,
             0.0
         ],
-        "description": "Held: Provides a 1/10 (10%) boost in accuracy to the holder."
+        "description": "Held: Holder’s Super Effective moves do 20% extra damage."
+    },
+    "spookyplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Ghost-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ghost."
+    },
+    "lightclay": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Light Screen and Reflect used by the holder last 8 rounds instead of 5."
+    },
+    "mindplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Psychic-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Psychic."
+    },
+    "chestoberry": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Consumed when asleep to cure sleep."
+    },
+    "meadowplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Grass-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Grass."
+    },
+    "rustedshield": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Zamazenta. Changes form to Crowned Shield. Cannot be knocked off or tricked. Changes Iron Head into Behemoth Bash."
+    },
+    "lightball": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Doubles Pikachu’s Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle."
+    },
+    "wellspringmask": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Ogerpon. Changes form to Wellspring Mask. Boosts Water-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Water-type move."
+    },
+    "dreadplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Dark-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Dark."
+    },
+    "flameplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Fire-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fire."
+    },
+    "splashplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Water-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Water."
+    },
+    "choicescarf": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Increases Speed by 50%, but restricts the holder to only one move."
     },
     "scopelens": {
         "stats_vector": [
@@ -571,18 +296,7 @@
         ],
         "description": "Held: Raises the holder’s critical hit ratio by one stage."
     },
-    "focussash": {
-        "stats_vector": [
-            0.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
-    },
-    "toxicplate": {
+    "earthplate": {
         "stats_vector": [
             0.0,
             0.0,
@@ -591,20 +305,9 @@
             1.0,
             0.0
         ],
-        "description": "Held: Poison-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Poison."
+        "description": "Held: Ground-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ground."
     },
-    "assaultvest": {
-        "stats_vector": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-        ],
-        "description": "Raises the holder’s Special Defense to 1.5×.  Prevents the holder from selecting a status move."
-    },
-    "griseouscore": {
+    "stoneplate": {
         "stats_vector": [
             0.0,
             0.0,
@@ -613,9 +316,9 @@
             1.0,
             0.0
         ],
-        "description": "Held by Giratina. Changes form to Origin Form. Boosts Ghost-type and Dragon-type moves by 20%."
+        "description": "Held: Rock-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Rock."
     },
-    "icicleplate": {
+    "hearthflamemask": {
         "stats_vector": [
             0.0,
             0.0,
@@ -624,7 +327,29 @@
             1.0,
             0.0
         ],
-        "description": "Held: Ice-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ice."
+        "description": "Held by Ogerpon. Changes form to Hearthflame Mask. Boosts Fire-type moves by 20% and cannot be knocked off. Turns Ivy Cudgel into a Fire-type move."
+    },
+    "widelens": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Provides a 1/10 (10%) boost in accuracy to the holder."
+    },
+    "leppaberry": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Consumed when a move runs out of PP to restore its PP by 10."
     },
     "toxicorb": {
         "stats_vector": [
@@ -637,6 +362,138 @@
         ],
         "description": "Held: Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur."
     },
+    "icicleplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Ice-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Ice."
+    },
+    "lifeorb": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Holder’s moves inflict 30% extra damage, but cost 10% max HP."
+    },
+    "custapberry": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Consumed at 1/4 max HP when using a move to go first."
+    },
+    "souldew": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises Latias and Latios’s Special Attack and Special Defense by 50%."
+    },
+    "assaultvest": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Raises the holder’s Special Defense to 1.5×.  Prevents the holder from selecting a status move."
+    },
+    "focussash": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+    },
+    "leftovers": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Restores 1/16 (6.25%) holder’s max HP at the end of each turn."
+    },
+    "loadeddice": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Multi-hit moves hit more consistently, guaranteeing at least 4 hits for standard 2-5 hit moves."
+    },
+    "boosterenergy": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Activates Protosynthesis or Quark Drive abilities upon entry. Consumed after use."
+    },
+    "magnet": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Electric-Type moves from holder do 20% more damage."
+    },
+    "choiceband": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Increases Attack by 50%, but restricts the holder to only one move."
+    },
+    "weaknesspolicy": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: When the holder is hit by a super effective move, its Attack and Special Attack raise by two stages."
+    },
     "lustrousorb": {
         "stats_vector": [
             0.0,
@@ -648,7 +505,18 @@
         ],
         "description": "Boosts the damage from Palkia’s Dragon-type and Water-type moves by 20%."
     },
-    "stoneplate": {
+    "silkscarf": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Normal-Type moves from holder do 20% more damage."
+    },
+    "insectplate": {
         "stats_vector": [
             0.0,
             0.0,
@@ -657,7 +525,139 @@
             1.0,
             0.0
         ],
-        "description": "Held: Rock-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Rock."
+        "description": "Held: Bug-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Bug."
+    },
+    "zapplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Electric-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Electric."
+    },
+    "whiteherb": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
+    },
+    "rustedsword": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Zacian. Changes form to Crowned Sword. Cannot be knocked off or tricked. Changes Iron Head into Behemoth Blade."
+    },
+    "heavydutyboots": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: The holder is completely immune to all entry hazard damage and effects (Stealth Rock, Spikes, Toxic Spikes, Sticky Web)."
+    },
+    "dracoplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Dragon-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Dragon."
+    },
+    "griseouscore": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Giratina. Changes form to Origin Form. Boosts Ghost-type and Dragon-type moves by 20%."
+    },
+    "silverpowder": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Bug-Type moves from holder do 20% more damage."
+    },
+    "lustrousglobe": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held by Palkia. Changes form to Origin Form. Boosts Water-type and Dragon-type moves by 20%."
+    },
+    "flameorb": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Inflicts Burn on the holder at the end of the turn. Activates after Burn damage would occur."
+    },
+    "airballoon": {
+        "stats_vector": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
+    },
+    "choicespecs": {
+        "stats_vector": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "description": "Held: Increases Special Attack by 50%, but restricts the holder to only one move."
+    },
+    "fistplate": {
+        "stats_vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "description": "Held: Fighting-Type moves from holder do 20% more damage. Changes Arceus’s and Judgment’s type to Fighting."
     },
     "noitem": {
         "stats_vector": [
