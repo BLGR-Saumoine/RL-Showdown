@@ -346,8 +346,6 @@ def get_moves_json(path : str) :
     dict_moves = {}
     bad_moves = []
 
-    desc_json = requests.get(f"https://play.pokemonshowdown.com/data/moves.json").json()
-
     for id,move in MOVES_ID.items() :
 
         description = "No description available."
@@ -398,12 +396,8 @@ def get_moves_json(path : str) :
             move_vec.extend(get_one_hot_type(info_move["type"]["name"]))
 
             #------------------------- Getting the description of the move ---------------------------------------
-<<<<<<< HEAD
 
             description = get_showdown_desc(move['showdown_id'])
-=======
-            description  =  desc_json.get(move['showdown_id'], "YOHOHO")
->>>>>>> 5630cf0039127592046df463bafc8526b09104d0
 
             dict_moves[move['showdown_id']] = {
                 "stats_vector": move_vec,
@@ -576,10 +570,11 @@ def get_poke_json(path : str) :
         id_abilities = []
 
         potential_abilities = temp[poke["raw_name"]]["abilities"]
-        print(potential_abilities)
         for abi in potential_abilities :
+            print(abi)
             id_abilities.append(ABILITIES_ID.get(abi, "Ayya je suis le pire programmeur que le monde ait connu"))
         poke_vec.append(id_abilities)
+        print(id_abilities)
 
         #----Getting the potential items
 
